@@ -1,101 +1,194 @@
 import Image from "next/image";
+import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaEnvelope,
+  FaPhone,
+} from "react-icons/fa";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import Menu from "./Components/Menu";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* Background Video */}
+      <div className="relative w-full h-screen overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute opacity-50 top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="./salvid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Optional Overlay for Darkening the Video */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+
+        {/* Content Overlay */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <Navbar />
+          
+          {/* Spacing between Navbar and Content */}
+          <div className="mt-10 md:mt-36">
+
+            {/* Main Heading */}
+            <h1
+              className="text-white text-4xl md:text-5xl font-bold mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              DISCOVER YOUR OWN STYLE AT STYLICLE
+            </h1>
+
+            {/* Subheading */}
+            <p
+              className="text-white text-lg md:text-2xl"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+            >
+              BECAUSE IT HAS TO BE PERFECT
+            </p>
+
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </div>
+
+      <About/>
+
+      <section id="expanded-services" className="py-20 bg-gray-900" data-aos="fade-up">
+  <div className="container mx-auto text-center">
+    <h2 className="text-5xl font-bold text-yellow-400 mb-10">Our Exclusive Services</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: 'Hair Treatment',
+          description: 'Revitalize your hair with our specialized treatments.',
+          image: './hairtreat.jpg',
+        },
+        {
+          title: 'Organic Facial',
+          description: 'Refresh your skin with natural and organic ingredients.',
+          image: './organicfacial.jpg',
+        },
+        {
+          title: 'Spa Manicure',
+          description: 'Experience luxury with our spa manicure services.',
+          image: './spamanicure.webp',
+        },
+        {
+          title: 'Hair & Beard',
+          description: 'Expert hair and beard grooming tailored to your style.',
+          image: './hairandbeard.jpg',
+        },
+        {
+          title: 'Kids Hair Cutting',
+          description: 'Fun and stylish haircuts for your little ones.',
+          image: './kidshair.jpg',
+        },
+        {
+          title: 'Brazilian Keratin',
+          description: 'Achieve smooth and frizz-free hair with our keratin treatments.',
+          image: 'https://www.nicholasmark.co.uk/mens-hair-straightening-newcastle-upon-tyne.jpg',
+        },
+        {
+          title: 'Nail Care',
+          description: 'Pamper your nails with our comprehensive nail care services.',
+          image: 'https://media.istockphoto.com/id/1308840699/photo/woman-doing-manicure.jpg?s=612x612&w=0&k=20&c=kD5tBjVGPqEkZVGy9MDlXWt0M8rUGO8Kb-pdpICttOU=',
+        },
+        {
+          title: 'Waxing',
+          description: 'Smooth and hair-free skin with our professional waxing services.',
+          image: './waxing.png',
+        },
+        {
+          title: 'Shaving',
+          description: 'Traditional and modern shaving techniques for a clean look.',
+          image: 'https://t4.ftcdn.net/jpg/02/69/63/35/360_F_269633549_QijCLiqbGdwW1ynHsnul7ELl2trMpn25.jpg',
+        },
+        {
+          title: 'Spa',
+          description: 'Relax and rejuvenate with our luxurious spa services.',
+          image: 'https://outlooksalon.ca/wp-content/uploads/2017/02/Mens_Gallery_0002_hairspa.jpg',
+        },
+        {
+          title: 'Massage',
+          description: 'Unwind with our therapeutic massage treatments.',
+          image: 'https://img.freepik.com/premium-photo/handsome-man-spa-resort-receives-hot-stone-massage-hot-stone-massage-therapy_609048-3379.jpg',
+        },
+      ].map((service) => (
+        <div
+          className="relative rounded-lg overflow-hidden"
+          key={service.title}
+          data-aos="zoom-in"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-80 object-cover"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">{service.title}</h3>
+            <p className="text-gray-200">{service.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
+  </div>
+</section>
+
+
+<Menu/>
+
+
+
+
+
+
+
+
+{/* Gallery Section */}
+<section id="gallery" className="py-20 bg-gray-900">
+  <div className="container mx-auto text-center" data-aos="fade-up">
+    <h2 className="text-3xl font-bold text-yellow-400 mb-10" data-aos="fade-up">
+      Our Team
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {Array(3)
+        .fill(0)
+        .map((_, index) => (
+          <div
+            className="overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 bg-gray-800"
+            key={index}
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 100}`}
+          >
+            <img
+              src={`./gallery/image${index + 1}.jpg`}
+              alt={`Gallery Image ${index + 1}`}
+              className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+        ))}
+    </div>
+  </div>
+</section>
+
+      <Contact/>
+      {/* <div className="p-8">
+      <h1 className="text-3xl font-bold mb-4">Visit Our Salon</h1>
+      <Map />
+    </div> */}
+      <Footer/>
+     
+
+
+    </>
   );
 }
