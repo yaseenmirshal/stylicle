@@ -65,12 +65,12 @@ function Footer() {
         {/* Social Media Links */}
         <div className="flex justify-center md:justify-start space-x-6 mb-4 md:mb-0">
           <a href="#" className="text-[#FFD700] transition duration-300 hover:text-white">
-            <FaFacebook size={24} />
+            <FaFacebook siaze={24} />
           </a>
-          <a href="#" className="text-[#FFD700] transition duration-300 hover:text-white">
+          <a href="https://www.instagram.com/styliclesalon/" className="text-[#FFD700] transition duration-300 hover:text-white">
             <FaInstagram size={24} />
           </a>
-          <a href="#" className="text-[#FFD700] transition duration-300 hover:text-white">
+          <a href="https://wa.me/971542692267" className="text-[#FFD700] transition duration-300 hover:text-white">
             <FaWhatsapp size={24} />
           </a>
         </div>

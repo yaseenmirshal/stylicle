@@ -1,17 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaWhatsapp,
-  FaEnvelope,
-  FaPhone,
-} from "react-icons/fa";
+
 import { FiMenu, FiX } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLanguage } from "../Context/LanguageContext";// Import the useLanguage hook
 
 function Navbar() {
+  const { translate } = useLanguage(); // Get the translate function from context
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [isClient, setIsClient] = useState(false);
@@ -62,7 +58,11 @@ function Navbar() {
 
         {/* Left Side Navigation Links */}
         <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute left-5 md:left-16">
-          {["HOME", "ABOUT", "CONTACT"].map((item, index) => (
+          {[
+            translate('navbar.home'),
+            translate('navbar.about'),
+            translate('navbar.contact'),
+          ].map((item, index) => (
             <h1
               key={index}
               className="text-white cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
@@ -86,7 +86,11 @@ function Navbar() {
 
         {/* Right Side Navigation Links */}
         <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute right-5 md:right-16">
-          {["SERVICES", "GALLERY", "BLOG"].map((item, index) => (
+          {[
+            translate('navbar.services'),
+            translate('navbar.gallery'),
+            translate('navbar.blog'),
+          ].map((item, index) => (
             <h1
               key={index}
               className="text-white cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
@@ -102,24 +106,28 @@ function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="bg-slate-800 text-white p-5 md:hidden flex flex-col space-y-4 text-center transition-transform duration-500 ease-in-out">
-          {["HOME", "ABOUT", "CONTACT", "SERVICES", "GALLERY", "BLOG"].map(
-            (item, index) => (
-              <h1
-                key={index}
-                className="cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
-                onClick={() => setIsMenuOpen(false)}
-                data-aos="fade-up"
-                data-aos-delay={`${index * 100}`}
-              >
-                {item}
-              </h1>
-            )
-          )}
+          {[
+            translate('navbar.home'),
+            translate('navbar.about'),
+            translate('navbar.contact'),
+            translate('navbar.services'),
+            translate('navbar.gallery'),
+            translate('navbar.blog'),
+          ].map((item, index) => (
+            <h1
+              key={index}
+              className="cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
+              onClick={() => setIsMenuOpen(false)}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+            >
+              {item}
+            </h1>
+          ))}
         </div>
       )}
     </div>
   );
 }
-
 
 export default Navbar;

@@ -1,6 +1,138 @@
 import React from 'react';
+import { useLanguage } from '../Context/LanguageContext';
 
 function Menu() {
+  const { translate } = useLanguage(); // Get the translate function from context
+
+  const services = [
+    {
+      title: translate("Hair & Beard"),
+      items: [
+        { name: translate("Hair Cutting"), price: translate("30 AED") },
+        { name: translate("Beard Setting"), price: translate("30 AED") },
+        { name: translate("Beard Shaving"), price: translate("25 AED") },
+        { name: translate("Beard Scissor"), price: translate("40 AED") },
+        { name: translate("Beard Coloring"), price: translate("40 AED") },
+        { name: translate("Special Beard Coloring"), price: translate("50 AED") },
+        { name: translate("Beard Waxing"), price: translate("40 AED") },
+        { name: translate("Face Threading"), price: translate("20 AED") },
+        { name: translate("Hair Washing"), price: translate("10 AED") },
+        { name: translate("Hair Washing & Styling"), price: translate("25 AED") },
+        { name: translate("Head Massage"), price: translate("40 AED") },
+        { name: translate("Hair Treatment"), price: translate("50 AED") },
+        { name: translate("Hair Treatment With Steam"), price: translate("60 AED") },
+      ],
+    },
+    {
+      title: translate("Facial"),
+      items: [
+        { name: translate("Golden Facial"), price: translate("50 AED") },
+        { name: translate("Golden Facial with Steam"), price: translate("70 AED") },
+        { name: translate("Diamond Facial"), price: translate("55 AED") },
+        { name: translate("Diamond Facial with Steam"), price: translate("75 AED") },
+        { name: translate("Pearl Facial"), price: translate("50 AED") },
+        { name: translate("Pearl Facial with Steam"), price: translate("60 AED") },
+        { name: translate("Face Mask"), price: translate("20 AED") },
+        { name: translate("Black Mask"), price: translate("20 AED") },
+        { name: translate("Charcoal Facial"), price: translate("70 AED") },
+        { name: translate("Charcoal Facial with Steam"), price: translate("100 AED") },
+      ],
+    },
+    {
+      title: translate("Kids"),
+      items: [
+        { name: translate("Boy Hair Cutting"), price: translate("40 AED") },
+        { name: translate("Girl Hair Cutting"), price: translate("50 AED") },
+        { name: translate("Kids Pedicure"), price: translate("40 AED") },
+        { name: translate("Kids Medi Cure"), price: translate("40 AED") },
+        { name: translate("Henna"), price: translate("80 AED") },
+        { name: translate("Keratine Treatment"), price: translate("350/700 AED") },
+        { name: translate("Bangs Hair"), price: translate("30 AED") },
+        { name: translate("Menicure Color"), price: translate("30 AED") },
+        { name: translate("Blow-Dry"), price: translate("50 AED") },
+        { name: translate("Hot Oil Treatment"), price: translate("50/100 AED") },
+        { name: translate("Wash & Blower"), price: translate("100 AED") },
+      ],
+    },
+    {
+      title: translate("Brazilian Keratin"),
+      items: [
+        { name: translate("Short Hair"), price: translate("200 AED") },
+        { name: translate("Long Hair"), price: translate("350 AED") },
+        { name: translate("Medium Hair"), price: translate("300 AED") },
+      ],
+    },
+    {
+      title: translate("Nail Care"),
+      items: [
+        { name: translate("Manicure"), price: translate("60 AED") },
+        { name: translate("Pedicure"), price: translate("60 AED") },
+        { name: translate("Foot Massage"), price: translate("60 AED") },
+        { name: translate("Foot Scrub"), price: translate("40 AED") },
+      ],
+    },
+    {
+      title: translate("Massages"),
+      items: [
+        { name: translate("Thai Massage"), price: translate("100 AED") },
+        { name: translate("Relax Massage"), price: translate("70 AED") },
+      ],
+    },
+    {
+      title: translate("Waxing"),
+      items: [
+        { name: translate("Under Arm"), price: translate("50 AED") },
+        { name: translate("Chest & Back"), price: translate("80 AED") },
+        { name: translate("Full Body"), price: translate("300 AED") },
+        { name: translate("Up & Down"), price: translate("100 AED") },
+        { name: translate("Front"), price: translate("70 AED") },
+        { name: translate("Back"), price: translate("70 AED") },
+        { name: translate("Bikini"), price: translate("100 AED") },
+        { name: translate("Legs"), price: translate("100 AED") },
+      ],
+    },
+    {
+      title: translate("Shaving"),
+      items: [
+        { name: translate("Under Arm"), price: translate("50 AED") },
+        { name: translate("Front"), price: translate("50 AED") },
+        { name: translate("Back"), price: translate("50 AED") },
+        { name: translate("Bikini"), price: translate("50 AED") },
+        { name: translate("Legs"), price: translate("80 AED") },
+        { name: translate("Full Body"), price: translate("200 AED") },
+      ],
+    },
+    {
+      title: translate("Spa"),
+      items: [
+        { name: translate("Normal Moroccan Bath"), price: translate("150 AED") },
+        { name: translate("Herbal Bath"), price: translate("200 AED") },
+        { name: translate("Bath, Oils, Aromatic"), price: translate("300 AED") },
+        { name: translate("Bride Bath"), price: translate("600 AED") },
+        { name: translate("Moroccan Bath with Herbal"), price: translate("200 AED") },
+        { name: translate("Moroccan Bath with Odoi & Mahlab"), price: translate("250 AED") },
+        { name: translate("Turkish Bath"), price: translate("150 AED") },
+        { name: translate("Energy Bath"), price: translate("150 AED") },
+        { name: translate("Moroccan Bath with Massage"), price: translate("250 AED") },
+      ],
+    },
+    {
+      title: translate("Package Services"),
+      items: [
+        { name: translate("Full Day Beauty Package"), price: translate("500 AED") },
+        { name: translate("Hair & Nail Package"), price: translate("120 AED") },
+      ],
+    },
+    {
+      title: translate("Monthly Massage Packages"),
+      items: [
+        { name: translate("5 Relaxation Message Sessions"), price: translate("500 AED") },
+        { name: translate("5 Sports Massage Sessions"), price: translate("750 AED") },
+        { name: translate("5 Therapeutic Massage Sessions"), price: translate("750 AED") },
+      ],
+    },
+  ];
+
   return (
     <div>
       {/* Menu Section */}
@@ -10,136 +142,9 @@ function Menu() {
         data-aos="fade-up"
       >
         <div className="container mx-auto text-center">
-          <h2 className="text-6xl font-extrabold text-yellow-400 mb-10">Salon Services Menu</h2> {/* Yellow text */}
+          <h2 className="text-5xl font-extrabold text-yellow-400 mb-10">{translate("Salon Services Menu")}</h2> {/* Yellow text */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {[
-              {
-                title: 'Hair & Beard',
-                items: [
-                  { name: 'Hair Cutting', price: '30 AED' },
-                  { name: 'Beard Setting', price: '30 AED' },
-                  { name: 'Beard Shaving', price: '25 AED' },
-                  { name: 'Beard Scissor', price: '40 AED' },
-                  { name: 'Beard Coloring', price: '40 AED' },
-                  { name: 'Special Beard Coloring', price: '50 AED' },
-                  { name: 'Beard Waxing', price: '40 AED' },
-                  { name: 'Face Threading', price: '20 AED' },
-                  { name: 'Hair Washing', price: '10 AED' },
-                  { name: 'Hair Washing & Styling', price: '25 AED' },
-                  { name: 'Head Massage', price: '40 AED' },
-                  { name: 'Hair Treatment', price: '50 AED' },
-                  { name: 'Hair Treatment With Steam', price: '60 AED' },
-                ],
-              },
-              {
-                title: 'Facial',
-                items: [
-                  { name: 'Golden Facial', price: '50 AED' },
-                  { name: 'Golden Facial with Steam', price: '70 AED' },
-                  { name: 'Diamond Facial', price: '55 AED' },
-                  { name: 'Diamond Facial with Steam', price: '75 AED' },
-                  { name: 'Pearl Facial', price: '50 AED' },
-                  { name: 'Pearl Facial with Steam', price: '60 AED' },
-                  { name: 'Face Mask', price: '20 AED' },
-                  { name: 'Black Mask', price: '20 AED' },
-                  { name: 'Charcoal Facial', price: '70 AED' },
-                  { name: 'Charcoal Facial with Steam', price: '100 AED' },
-                ],
-              },
-              {
-                title: 'Kids',
-                items: [
-                  { name: 'Boy Hair Cutting', price: '40 AED' },
-                  { name: 'Girl Hair Cutting', price: '50 AED' },
-                  { name: 'Kids Pedicure', price: '40 AED' },
-                  { name: 'Kids Medi Cure', price: '40 AED' },
-                  { name: 'Henna', price: '80 AED' },
-                  { name: 'Keratine Treatment', price: '350/700 AED' },
-                  { name: 'Bangs Hair', price: '30 AED' },
-                  { name: 'Menicure Color', price: '30 AED' },
-                  { name: 'Blow-Dry', price: '50 AED' },
-                  { name: 'Hot Oil Treatment', price: '50/100 AED' },
-                  { name: 'Wash & Blower', price: '100 AED' },
-                ],
-              },
-              {
-                title: 'Brazilian Keratin',
-                items: [
-                  { name: 'Short Hair', price: '200 AED' },
-                  { name: 'Long Hair', price: '350 AED' },
-                  { name: 'Medium Hair', price: '300 AED' },
-                ],
-              },
-              {
-                title: 'Nail Care',
-                items: [
-                  { name: 'Manicure', price: '60 AED' },
-                  { name: 'Pedicure', price: '60 AED' },
-                  { name: 'Foot Massage', price: '60 AED' },
-                  { name: 'Foot Scrub', price: '40 AED' },
-                ],
-              },
-              {
-                title: 'Massages',
-                items: [
-                  { name: 'Thai Massage', price: '100 AED' },
-                  { name: 'Relax Massage', price: '70 AED' },
-                ],
-              },
-              {
-                title: 'Waxing',
-                items: [
-                  { name: 'Under Arm', price: '50 AED' },
-                  { name: 'Chest & Back', price: '80 AED' },
-                  { name: 'Full Body', price: '300 AED' },
-                  { name: 'Up & Down', price: '100 AED' },
-                  { name: 'Front', price: '70 AED' },
-                  { name: 'Back', price: '70 AED' },
-                  { name: 'Bikini', price: '100 AED' },
-                  { name: 'Legs', price: '100 AED' },
-                ],
-              },
-              {
-                title: 'Shaving',
-                items: [
-                  { name: 'Under Arm', price: '50 AED' },
-                  { name: 'Front', price: '50 AED' },
-                  { name: 'Back', price: '50 AED' },
-                  { name: 'Bikini', price: '50 AED' },
-                  { name: 'Legs', price: '80 AED' },
-                  { name: 'Full Body', price: '200 AED' },
-                ],
-              },
-              {
-                title: 'Spa',
-                items: [
-                  { name: 'Normal Moroccan Bath', price: '150 AED' },
-                  { name: 'Herbal Bath', price: '200 AED' },
-                  { name: 'Bath, Oils, Aromatic', price: '300 AED' },
-                  { name: 'Bride Bath', price: '600 AED' },
-                  { name: 'Moroccan Bath with Herbal', price: '200 AED' },
-                  { name: 'Moroccan Bath with Odoi & Mahlab', price: '250 AED' },
-                  { name: 'Turkish Bath', price: '150 AED' },
-                  { name: 'Energy Bath', price: '150 AED' },
-                  { name: 'Moroccan Bath with Massage', price: '250 AED' },
-                ],
-              },
-              {
-                title: 'Package Services',
-                items: [
-                  { name: 'Full Day Beauty Package', price: '500 AED' },
-                  { name: 'Hair & Nail Package', price: '120 AED' },
-                ],
-              },
-              {
-                title: 'Monthly Massage Packages',
-                items: [
-                  { name: '5 Relaxation Message Sessions', price: '500 AED' },
-                  { name: '5 Sports Massage Sessions', price: '750 AED' },
-                  { name: '5 Therapeutic Massage Sessions', price: '750 AED' },
-                ],
-              },
-            ].map((service, index) => (
+            {services.map((service, index) => (
               <div
                 key={index}
                 className="p-6 rounded-lg shadow-lg bg-gray-800 transform hover:scale-105 transition duration-300 flex flex-col items-start" // Dark card background
@@ -162,9 +167,9 @@ function Menu() {
           </div>
         </div>
         <div className="mt-16 bg-gray-800 text-white text-center py-10" data-aos="fade-up">
-          <h3 className="text-4xl font-bold mb-4">Elevate Your Beauty Experience</h3>
+          <h3 className="text-4xl font-bold mb-4">{translate("Elevate Your Beauty Experience")}</h3>
           <p className="text-lg px-10">
-            At <span className="font-semibold text-yellow-400">Stylice Salon</span>, we believe in providing a comprehensive range of beauty services tailored to your needs. Visit us today and explore what we can do for you!
+            {translate("At")} <span className="font-semibold text-yellow-400">{translate("Stylice Salon")}</span>, {translate("we strive to provide you with an unforgettable experience.")}
           </p>
         </div>
       </section>
