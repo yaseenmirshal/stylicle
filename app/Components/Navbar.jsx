@@ -17,13 +17,15 @@ function Navbar() {
     AOS.init({ duration: 1000 });
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
+      if (window.innerWidth > 768) { // Only apply the logic if screen width is greater than 768px
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY) {
+          setShowNavbar(false);
+        } else {
+          setShowNavbar(true);
+        }
+        lastScrollY = currentScrollY;
       }
-      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,6 +38,7 @@ function Navbar() {
   if (!isClient) {
     return null; // Prevent server-side mismatch by skipping rendering until the client-side
   }
+
 
   return (
     <div
@@ -58,18 +61,20 @@ function Navbar() {
         {/* Left Side Navigation Links */}
         <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute left-5 md:left-16">
           {[
-            translate("navbar.home"),
-            translate("navbar.about"),
-            translate("navbar.contact"),
+           { label: translate("navbar.home"), link: "#home" },
+           { label: translate("navbar.about"), link: "#about" },
+           { label: translate("navbar.contact"), link: "#contact" },
+
           ].map((item, index) => (
-            <h1
+            <a
               key={index}
+              href={item.link}
               className="text-white cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
               data-aos="fade-down"
               data-aos-delay={`${index * 100}`}
             >
-              {item}
-            </h1>
+              {item.label}
+            </a>
           ))}
         </div>
 
@@ -86,18 +91,19 @@ function Navbar() {
         {/* Right Side Navigation Links */}
         <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute right-5 md:right-16">
           {[
-            translate("navbar.services"),
-            translate("navbar.gallery"),
-            translate("navbar.blog"),
+             { label: translate("navbar.services"), link: "#services" },
+             { label: translate("navbar.gallery"), link: "#gallery" },
+             { label: translate("navbar.blog"), link: "#menu" },
           ].map((item, index) => (
-            <h1
-              key={index}
-              className="text-white cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
-              data-aos="fade-down"
-              data-aos-delay={`${index * 100 + 300}`}
-            >
-              {item}
-            </h1>
+            <a
+            key={index}
+            href={item.link}
+            className="text-white cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
+            data-aos="fade-down"
+            data-aos-delay={`${index * 100}`}
+          >
+            {item.label}
+          </a>
           ))}
         </div>
       </div>
@@ -106,22 +112,23 @@ function Navbar() {
       {isMenuOpen && (
         <div className="bg-slate-800 text-white p-5 md:hidden flex flex-col space-y-4 text-center transition-transform duration-500 ease-in-out">
           {[
-            translate("navbar.home"),
-            translate("navbar.about"),
-            translate("navbar.contact"),
-            translate("navbar.services"),
-            translate("navbar.gallery"),
-            translate("navbar.blog"),
+           { label: translate("navbar.home"), link: "#home" },
+           { label: translate("navbar.about"), link: "#about" },
+           { label: translate("navbar.contact"), link: "#contact" },
+            { label: translate("navbar.services"), link: "#services" },
+            { label: translate("navbar.gallery"), link: "#gallery" },
+            { label: translate("navbar.blog"), link: "#menu" },
           ].map((item, index) => (
-            <h1
+            <a
               key={index}
+              href={item.link}
               className="cursor-pointer transition duration-300 hover:text-gray-300 hover:scale-105"
               onClick={() => setIsMenuOpen(false)}
               data-aos="fade-up"
               data-aos-delay={`${index * 100}`}
             >
-              {item}
-            </h1>
+              {item.label}
+            </a>
           ))}
         </div>
       )}

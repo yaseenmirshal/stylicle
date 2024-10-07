@@ -5,7 +5,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Menu from "./Components/Menu";
 import LanguageModal from "./Components/ModalLanguage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "./Context/LanguageContext";
 import { translations } from "./translation"; // Import translations
 export default function Home() {
@@ -20,12 +20,34 @@ export default function Home() {
 
   const t = translations[language]; // Get translations for the selected language
 
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    // Function to handle screen resizing
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    // Set the initial state
+    handleResize();
+
+    // Add event listener for resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       {showModal && <LanguageModal onLanguageSelect={handleLanguageSelect} />}
 
       {/* Background Video */}
-      <div className="relative w-full h-screen overflow-hidden">
+      <div id="home" className="relative w-full h-screen overflow-hidden">
+      {isDesktop ? (
+        // Render video on desktop
         <video
           autoPlay
           loop
@@ -35,6 +57,14 @@ export default function Home() {
           <source src="./salvid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      ) : (
+        // Render image on mobile
+        <img
+          src="./shop.png"
+          alt="Background"
+          className="absolute opacity-50 top-0 left-0 w-full h-full object-cover"
+        />
+      )}
 
         {/* Optional Overlay for Darkening the Video */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
@@ -70,15 +100,15 @@ export default function Home() {
       <About />
       <Contact />
 
-      <section id="expanded-services" className="py-20 bg-gray-900">
+      <section id="services" className="py-20 bg-gray-900">
         <div className="container mx-auto text-center">
           <h2
-            className="text-5xl font-bold text-yellow-400 mb-10 "
+            className="text-4xl lg:text-5xl font-bold text-yellow-400 mb-10 "
             data-aod="fade-up"
           >
             {t.exclusiveServices}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 p-5 lg:p-0 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.services.map((service) => (
               <div
                 className="relative rounded-lg overflow-hidden"
@@ -113,7 +143,7 @@ export default function Home() {
           >
             {translate("Our Team")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 p-5 lg:p-0 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {Array(3)
               .fill(0)
               .map((_, index) => (

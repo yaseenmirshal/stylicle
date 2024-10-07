@@ -2,7 +2,7 @@ export const translations = {
     en: {
       mainHeading: "DISCOVER YOUR OWN STYLE AT STYLICLE",
       subHeading: "BECAUSE IT HAS TO BE PERFECT",
-      exclusiveServices: "Our Exclusive Services",
+      exclusiveServices: "Our Services",
       services: [
         {
           title: 'Hair Treatment',
@@ -66,8 +66,8 @@ export const translations = {
         about: "ABOUT",
         contact: "CONTACT",
         services: "SERVICES",
-        gallery: "GALLERY",
-        blog: "BLOG",
+        menu: "MENU",
+        ourteam: "OUR TEAM",
       },
       
         footer: {
@@ -152,8 +152,8 @@ export const translations = {
         about: "نبذة عنا",
         contact: "اتصل بنا",
         services: "الخدمات",
-        gallery: "معرض",
-        blog: "مدونة",
+        menu: "معرض",
+        ourteam: "مدونة",
       },
       footer: {
         stylicleSalon: "صالون ستايليكل",

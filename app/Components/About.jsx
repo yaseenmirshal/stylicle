@@ -6,14 +6,14 @@ function About() {
   const { translate } = useLanguage(); // Get the translate function from context
 
   return (
-    <div>
+    <div id="about">
       {/* About Us Section */}
       <section
         id="about-us"
         className="py-20 bg-gray-900 relative overflow-hidden"
         data-aos="fade-up"
       >
-        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-5">
+        <div  className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-5">
           <div className="lg:w-1/2 text-left" data-aos="fade-right">
             <h2 className="text-6xl font-extrabold text-yellow-400 mb-6">
               {translate("about.title")} {/* Translate the title */}
@@ -40,10 +40,10 @@ function About() {
               alt="Stylice Salon"
               className="rounded-xl shadow-2xl border-8 border-gray-700 transform hover:scale-105 transition duration-300"
             />
-            <div
+            {/* <div
               className="absolute -bottom-16 -right-10 w-48 h-48 bg-yellow-600 rounded-full opacity-50 animate-pulse"
               data-aos="zoom-in"
-            />
+            /> */}
           </div>
         </div>
         <div

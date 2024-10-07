@@ -192,12 +192,12 @@ function Menu() {
       {/* Menu Section */}
       <section
         id="menu"
-        className="py-20 bg-gray-900 relative overflow-hidden" // Dark background
+        className="py-20 p-5 lg:p-0 bg-gray-900 relative overflow-hidden" // Dark background
         data-aos="fade-up"
       >
         <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-extrabold text-yellow-400 mb-10">
-            {translate("Salon Services Menu")}
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-yellow-400 mb-10">
+            {translate("Services Menu")}
           </h2>{" "}
           {/* Yellow text */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

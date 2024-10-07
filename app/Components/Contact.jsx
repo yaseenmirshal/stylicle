@@ -13,7 +13,7 @@ function Contact() {
   const { translate } = useLanguage(); // Get the translate function from context
 
   return (
-    <div>
+    <div id="contact">
       <div className="bg-gray-900 py-16 px-6 md:px-16">
         <div className="max-w-6xl mx-auto text-center">
           {/* Title and Description */}
