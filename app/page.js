@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -8,7 +8,6 @@ import LanguageModal from "./Components/ModalLanguage";
 import { useState } from "react";
 import { useLanguage } from "./Context/LanguageContext";
 import { translations } from "./translation"; // Import translations
-
 export default function Home() {
   const { language, setLanguage } = useLanguage(); // Use the language context
   const [showModal, setShowModal] = useState(true); // State to control modal visibility
@@ -24,7 +23,7 @@ export default function Home() {
   return (
     <>
       {showModal && <LanguageModal onLanguageSelect={handleLanguageSelect} />}
-    
+
       {/* Background Video */}
       <div className="relative w-full h-screen overflow-hidden">
         <video
@@ -43,7 +42,7 @@ export default function Home() {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
           <Navbar />
-          
+
           {/* Spacing between Navbar and Content */}
           <div className="mt-10 md:mt-36">
             {/* Main Heading */}
@@ -71,9 +70,14 @@ export default function Home() {
       <About />
       <Contact />
 
-      <section id="expanded-services" className="py-20 bg-gray-900" >
+      <section id="expanded-services" className="py-20 bg-gray-900">
         <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-bold text-yellow-400 mb-10 "data-aod="fade-up">{t.exclusiveServices}</h2>
+          <h2
+            className="text-5xl font-bold text-yellow-400 mb-10 "
+            data-aod="fade-up"
+          >
+            {t.exclusiveServices}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.services.map((service) => (
               <div
@@ -87,7 +91,9 @@ export default function Home() {
                   className="w-full h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4">
-                  <h3 className="text-2xl font-semibold text-yellow-400 mb-2">{service.title}</h3>
+                  <h3 className="text-2xl font-semibold text-yellow-400 mb-2">
+                    {service.title}
+                  </h3>
                   <p className="text-gray-200">{service.description}</p>
                 </div>
               </div>
@@ -96,12 +102,15 @@ export default function Home() {
         </div>
       </section>
 
-      <Menu />   
+      <Menu />
 
       {/* Gallery Section */}
       <section id="gallery" className="py-20 pt-0 bg-gray-900">
         <div className="container mx-auto text-center" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-yellow-400 mb-10" data-aos="fade-up">
+          <h2
+            className="text-3xl font-bold text-yellow-400 mb-10"
+            data-aos="fade-up"
+          >
             {translate("Our Team")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

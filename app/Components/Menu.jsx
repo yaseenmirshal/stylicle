@@ -1,5 +1,5 @@
-import React from 'react';
-import { useLanguage } from '../Context/LanguageContext';
+import React from "react";
+import { useLanguage } from "../Context/LanguageContext";
 
 function Menu() {
   const { translate } = useLanguage(); // Get the translate function from context
@@ -13,29 +13,50 @@ function Menu() {
         { name: translate("Beard Shaving"), price: translate("25 AED") },
         { name: translate("Beard Scissor"), price: translate("40 AED") },
         { name: translate("Beard Coloring"), price: translate("40 AED") },
-        { name: translate("Special Beard Coloring"), price: translate("50 AED") },
+        {
+          name: translate("Special Beard Coloring"),
+          price: translate("50 AED"),
+        },
         { name: translate("Beard Waxing"), price: translate("40 AED") },
         { name: translate("Face Threading"), price: translate("20 AED") },
         { name: translate("Hair Washing"), price: translate("10 AED") },
-        { name: translate("Hair Washing & Styling"), price: translate("25 AED") },
+        {
+          name: translate("Hair Washing & Styling"),
+          price: translate("25 AED"),
+        },
         { name: translate("Head Massage"), price: translate("40 AED") },
         { name: translate("Hair Treatment"), price: translate("50 AED") },
-        { name: translate("Hair Treatment With Steam"), price: translate("60 AED") },
+        {
+          name: translate("Hair Treatment With Steam"),
+          price: translate("60 AED"),
+        },
       ],
     },
     {
       title: translate("Facial"),
       items: [
         { name: translate("Golden Facial"), price: translate("50 AED") },
-        { name: translate("Golden Facial with Steam"), price: translate("70 AED") },
+        {
+          name: translate("Golden Facial with Steam"),
+          price: translate("70 AED"),
+        },
         { name: translate("Diamond Facial"), price: translate("55 AED") },
-        { name: translate("Diamond Facial with Steam"), price: translate("75 AED") },
+        {
+          name: translate("Diamond Facial with Steam"),
+          price: translate("75 AED"),
+        },
         { name: translate("Pearl Facial"), price: translate("50 AED") },
-        { name: translate("Pearl Facial with Steam"), price: translate("60 AED") },
+        {
+          name: translate("Pearl Facial with Steam"),
+          price: translate("60 AED"),
+        },
         { name: translate("Face Mask"), price: translate("20 AED") },
         { name: translate("Black Mask"), price: translate("20 AED") },
         { name: translate("Charcoal Facial"), price: translate("70 AED") },
-        { name: translate("Charcoal Facial with Steam"), price: translate("100 AED") },
+        {
+          name: translate("Charcoal Facial with Steam"),
+          price: translate("100 AED"),
+        },
       ],
     },
     {
@@ -46,11 +67,17 @@ function Menu() {
         { name: translate("Kids Pedicure"), price: translate("40 AED") },
         { name: translate("Kids Medi Cure"), price: translate("40 AED") },
         { name: translate("Henna"), price: translate("80 AED") },
-        { name: translate("Keratine Treatment"), price: translate("350/700 AED") },
+        {
+          name: translate("Keratine Treatment"),
+          price: translate("350/700 AED"),
+        },
         { name: translate("Bangs Hair"), price: translate("30 AED") },
         { name: translate("Menicure Color"), price: translate("30 AED") },
         { name: translate("Blow-Dry"), price: translate("50 AED") },
-        { name: translate("Hot Oil Treatment"), price: translate("50/100 AED") },
+        {
+          name: translate("Hot Oil Treatment"),
+          price: translate("50/100 AED"),
+        },
         { name: translate("Wash & Blower"), price: translate("100 AED") },
       ],
     },
@@ -105,30 +132,57 @@ function Menu() {
     {
       title: translate("Spa"),
       items: [
-        { name: translate("Normal Moroccan Bath"), price: translate("150 AED") },
+        {
+          name: translate("Normal Moroccan Bath"),
+          price: translate("150 AED"),
+        },
         { name: translate("Herbal Bath"), price: translate("200 AED") },
-        { name: translate("Bath, Oils, Aromatic"), price: translate("300 AED") },
+        {
+          name: translate("Bath, Oils, Aromatic"),
+          price: translate("300 AED"),
+        },
         { name: translate("Bride Bath"), price: translate("600 AED") },
-        { name: translate("Moroccan Bath with Herbal"), price: translate("200 AED") },
-        { name: translate("Moroccan Bath with Odoi & Mahlab"), price: translate("250 AED") },
+        {
+          name: translate("Moroccan Bath with Herbal"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Moroccan Bath with Odoi & Mahlab"),
+          price: translate("250 AED"),
+        },
         { name: translate("Turkish Bath"), price: translate("150 AED") },
         { name: translate("Energy Bath"), price: translate("150 AED") },
-        { name: translate("Moroccan Bath with Massage"), price: translate("250 AED") },
+        {
+          name: translate("Moroccan Bath with Massage"),
+          price: translate("250 AED"),
+        },
       ],
     },
     {
       title: translate("Package Services"),
       items: [
-        { name: translate("Full Day Beauty Package"), price: translate("500 AED") },
+        {
+          name: translate("Full Day Beauty Package"),
+          price: translate("500 AED"),
+        },
         { name: translate("Hair & Nail Package"), price: translate("120 AED") },
       ],
     },
     {
       title: translate("Monthly Massage Packages"),
       items: [
-        { name: translate("5 Relaxation Message Sessions"), price: translate("500 AED") },
-        { name: translate("5 Sports Massage Sessions"), price: translate("750 AED") },
-        { name: translate("5 Therapeutic Massage Sessions"), price: translate("750 AED") },
+        {
+          name: translate("5 Relaxation Message Sessions"),
+          price: translate("500 AED"),
+        },
+        {
+          name: translate("5 Sports Massage Sessions"),
+          price: translate("750 AED"),
+        },
+        {
+          name: translate("5 Therapeutic Massage Sessions"),
+          price: translate("750 AED"),
+        },
       ],
     },
   ];
@@ -142,7 +196,10 @@ function Menu() {
         data-aos="fade-up"
       >
         <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-extrabold text-yellow-400 mb-10">{translate("Salon Services Menu")}</h2> {/* Yellow text */}
+          <h2 className="text-5xl font-extrabold text-yellow-400 mb-10">
+            {translate("Salon Services Menu")}
+          </h2>{" "}
+          {/* Yellow text */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((service, index) => (
               <div
@@ -150,15 +207,22 @@ function Menu() {
                 className="p-6 rounded-lg shadow-lg bg-gray-800 transform hover:scale-105 transition duration-300 flex flex-col items-start" // Dark card background
                 data-aos="zoom-in"
               >
-                <h3 className="text-3xl font-bold text-yellow-400 mb-4">{service.title}</h3> {/* Yellow text */}
+                <h3 className="text-3xl font-bold text-yellow-400 mb-4">
+                  {service.title}
+                </h3>{" "}
+                {/* Yellow text */}
                 <ul className="text-left w-full">
                   {service.items.map((item, idx) => (
                     <li
                       key={idx}
                       className="flex justify-between w-full py-2 border-b border-transparent hover:border-yellow-500 transition duration-300"
                     >
-                      <span className="text-lg text-gray-300">{item.name}</span> {/* Light gray text */}
-                      <span className="text-lg font-semibold text-yellow-400">{item.price}</span> {/* Yellow price */}
+                      <span className="text-lg text-gray-300">{item.name}</span>{" "}
+                      {/* Light gray text */}
+                      <span className="text-lg font-semibold text-yellow-400">
+                        {item.price}
+                      </span>{" "}
+                      {/* Yellow price */}
                     </li>
                   ))}
                 </ul>
@@ -166,10 +230,22 @@ function Menu() {
             ))}
           </div>
         </div>
-        <div className="mt-16 bg-gray-800 text-white text-center py-10" data-aos="fade-up">
-          <h3 className="text-4xl font-bold mb-4">{translate("Elevate Your Beauty Experience")}</h3>
+        <div
+          className="mt-16 bg-gray-800 text-white text-center py-10"
+          data-aos="fade-up"
+        >
+          <h3 className="text-4xl font-bold mb-4">
+            {translate("Elevate Your Beauty Experience")}
+          </h3>
           <p className="text-lg px-10">
-            {translate("At")} <span className="font-semibold text-yellow-400">{translate("Stylice Salon")}</span>, {translate("we strive to provide you with an unforgettable experience.")}
+            {translate("At")}{" "}
+            <span className="font-semibold text-yellow-400">
+              {translate("Stylice Salon")}
+            </span>
+            ,{" "}
+            {translate(
+              "we strive to provide you with an unforgettable experience."
+            )}
           </p>
         </div>
       </section>

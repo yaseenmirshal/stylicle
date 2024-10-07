@@ -1,10 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
 import { FiMenu, FiX } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useLanguage } from "../Context/LanguageContext";// Import the useLanguage hook
+import { useLanguage } from "../Context/LanguageContext"; // Import the useLanguage hook
 
 function Navbar() {
   const { translate } = useLanguage(); // Get the translate function from context
@@ -59,9 +58,9 @@ function Navbar() {
         {/* Left Side Navigation Links */}
         <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute left-5 md:left-16">
           {[
-            translate('navbar.home'),
-            translate('navbar.about'),
-            translate('navbar.contact'),
+            translate("navbar.home"),
+            translate("navbar.about"),
+            translate("navbar.contact"),
           ].map((item, index) => (
             <h1
               key={index}
@@ -87,9 +86,9 @@ function Navbar() {
         {/* Right Side Navigation Links */}
         <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute right-5 md:right-16">
           {[
-            translate('navbar.services'),
-            translate('navbar.gallery'),
-            translate('navbar.blog'),
+            translate("navbar.services"),
+            translate("navbar.gallery"),
+            translate("navbar.blog"),
           ].map((item, index) => (
             <h1
               key={index}
@@ -107,12 +106,12 @@ function Navbar() {
       {isMenuOpen && (
         <div className="bg-slate-800 text-white p-5 md:hidden flex flex-col space-y-4 text-center transition-transform duration-500 ease-in-out">
           {[
-            translate('navbar.home'),
-            translate('navbar.about'),
-            translate('navbar.contact'),
-            translate('navbar.services'),
-            translate('navbar.gallery'),
-            translate('navbar.blog'),
+            translate("navbar.home"),
+            translate("navbar.about"),
+            translate("navbar.contact"),
+            translate("navbar.services"),
+            translate("navbar.gallery"),
+            translate("navbar.blog"),
           ].map((item, index) => (
             <h1
               key={index}
