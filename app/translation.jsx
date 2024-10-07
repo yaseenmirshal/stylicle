@@ -68,6 +68,7 @@ export const translations = {
         services: "SERVICES",
         menu: "MENU",
         ourteam: "OUR TEAM",
+        contact:"CONTACT"
       },
       
         footer: {
@@ -154,6 +155,7 @@ export const translations = {
         services: "الخدمات",
         menu: "معرض",
         ourteam: "مدونة",
+        contact: "اتصال"
       },
       footer: {
         stylicleSalon: "صالون ستايليكل",
