@@ -96,7 +96,7 @@ function Footer() {
             href="#"
             className="text-[#FFD700] transition duration-300 hover:text-white"
           >
-            <FaFacebook siaze={24} />
+            <FaFacebook size={24} />
           </a>
           <a
             href="https://www.instagram.com/styliclesalon/"
@@ -113,7 +113,7 @@ function Footer() {
         </div>
         {/* Copyright */}
         <p className="text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Stylicle Salon. All rights reserved.
+          &copy; {new Date().getFullYear()} ym_innovation. All rights reserved .
         </p>
       </div>
     </footer>
