@@ -13,10 +13,8 @@ function Menu() {
         { name: translate("Beard Shaving"), price: translate("25 AED") },
         { name: translate("Beard Scissor"), price: translate("40 AED") },
         { name: translate("Beard Coloring"), price: translate("40 AED") },
-        {
-          name: translate("Special Beard Coloring"),
-          price: translate("50 AED"),
-        },
+        {name: translate("Special Beard Coloring"),price: translate("50 AED")},
+        {name: translate("Hair Coloring"), price: translate("50 AED") }, 
         { name: translate("Beard Waxing"), price: translate("40 AED") },
         { name: translate("Face Threading"), price: translate("20 AED") },
         { name: translate("Hair Washing"), price: translate("10 AED") },
@@ -99,10 +97,36 @@ function Menu() {
       ],
     },
     {
+      title: translate("Monthly Massage Packages"),
+      items: [
+        {
+          name: translate("5 Relaxation Message Sessions"),
+          price: translate("500 AED"),
+        },
+        {
+          name: translate("5 Sports Massage Sessions"),
+          price: translate("750 AED"),
+        },
+        {
+          name: translate("5 Therapeutic Massage Sessions"),
+          price: translate("750 AED"),
+        },
+      ],
+    },
+    {
       title: translate("Massages"),
       items: [
-        { name: translate("Thai Massage"), price: translate("100 AED") },
-        { name: translate("Relax Massage"), price: translate("70 AED") },
+        { name: translate("Thai Massage 30 mints"), price: translate("100 AED") },
+        { name: translate("Thai Massage 60 mints"), price: translate("150 AED") },
+        { name: translate("Relax Massage 30 mints"), price: translate("80 AED") },
+        { name: translate("Relax Massage 60 mints"), price: translate("150 AED") },
+        { name: translate("Sports Massage 30 mints"), price: translate("110 AED") },
+        { name: translate("Sports Massage 60 mints"), price: translate("200 AED") },
+        { name: translate("Therapeutic Massage 30 mints"), price: translate("110 AED") },
+        { name: translate("Therapeutic Massage 60 mints"), price: translate("200 AED") },
+        { name: translate("Hot Stone Massage 30 mints"), price: translate("110 AED") },
+        { name: translate("Hot Stone Massage 60 mints"), price: translate("200 AED") },
+        
       ],
     },
     {
@@ -162,29 +186,49 @@ function Menu() {
       title: translate("Package Services"),
       items: [
         {
-          name: translate("Full Day Beauty Package"),
-          price: translate("500 AED"),
+          name: translate("Arm & Bikini Shave"),
+          price: translate("100 AED"),
         },
-        { name: translate("Hair & Nail Package"), price: translate("120 AED") },
+        {
+          name: translate("Arm & Bikini Wax"),
+          price: translate("120 AED"),
+        },
+        {
+          name: translate("Manicure, Pedicure & Scrub"),
+          price: translate("150 AED"),
+        },
+        {
+          name: translate("Arm & Bikini Shave +60 mints Massage"),
+          price: translate("180 AED"),
+        },
+        {
+          name: translate("Manicure, Pedicure & Scrub +30 mints Massage (Oil/Cream)"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Full Body Shave & 30 mints Massage (Oil/Cream)"),
+          price: translate("220 AED"),
+        },
+        {
+          name: translate("Full Body Wax & 30 mints Massage (Oil/Cream)"),
+          price: translate("250 AED"),
+        },
+        {
+          name: translate("Pedicure, Manicure & 30 mints Massage (Oil/Cream)"),
+          price: translate("150 AED"),
+        },
+        {
+          name: translate("Pedicure, Manicure & Normal Moroccan Bath"),
+          price: translate("220 AED"),
+        },
+        {
+          name: translate("Pedicure, Manicure, 30 mints Masssage & Normal Moroccan Bath"),
+          price: translate("270 AED"),
+        },
+        
       ],
     },
-    {
-      title: translate("Monthly Massage Packages"),
-      items: [
-        {
-          name: translate("5 Relaxation Message Sessions"),
-          price: translate("500 AED"),
-        },
-        {
-          name: translate("5 Sports Massage Sessions"),
-          price: translate("750 AED"),
-        },
-        {
-          name: translate("5 Therapeutic Massage Sessions"),
-          price: translate("750 AED"),
-        },
-      ],
-    },
+    
   ];
 
   return (

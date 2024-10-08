@@ -6,8 +6,11 @@ import {
   FaWhatsapp,
   FaEnvelope,
 } from "react-icons/fa";
+import { useLanguage } from "../Context/LanguageContext";
 
 function Footer() {
+
+  const { translate } = useLanguage();
   return (
     <footer className="bg-[#2E2E2E] text-white py-12 px-6 md:px-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">

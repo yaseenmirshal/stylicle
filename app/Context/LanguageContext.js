@@ -50,6 +50,9 @@ const translations = {
       "50 AED": "50 AED",
       "Beard Coloring": "Beard Coloring",
       "Special Beard Coloring": "Special Beard Coloring",
+      "Beard Waxing":"Beard Waxing",
+      "Hair Coloring":"Hair Coloring",
+      "50 AED":"50 AED",
       "Face Threading": "Face Threading",
       "Hair Washing": "Hair Washing",
       "10 AED": "10 AED",
@@ -121,7 +124,7 @@ const translations = {
       "Full Day Beauty Package": "Full Day Beauty Package",
       "Hair & Nail Package": "Hair & Nail Package",
       "Elevate Your Beauty Experience": "Elevate Your Beauty Experience",
-      At: "At",
+      "At": "At",
       "Stylice Salon": "Stylice Salon",
       "we strive to provide you with an unforgettable experience.":
         "we strive to provide you with an unforgettable experience.",
@@ -189,12 +192,45 @@ const translations = {
     "50 AED": "50 درهم",
     "Beard Coloring": "صبغ اللحية",
     "Special Beard Coloring": "صبغ اللحية الخاص",
+    "Hair Coloring" : "صبغ الشعر",
+    "50 AED":"50 درهم",
     "Beard Waxing": "إزالة شعر اللحية بالشمع",
-
     "Face Threading": "خيط الوجه",
     "20 AED": "20 درهم",
     "Hair Washing": "غسل الشعر",
     "10 AED": "10 درهم",
+    "110 AED":"110 درهم",
+    "180 AED":"180 درهم",
+    "220 AED":"220 درهم",
+    "270 AED":"270 درهم",
+
+    "Arm & Bikini Shave":"حلاقة الذراعين والبيكيني",
+    "Arm & Bikini Wax":"شمع الأذرع والبكيني",
+    "Manicure, Pedicure & Scrub":"مانيكير، باديكير وتقشير",
+    "Arm & Bikini Shave +60 mints Massage":"حلاقة الذراعين والبكيني +60 دقيقة تدليك",
+    "Manicure, Pedicure & Scrub +30 mints Massage (Oil/Cream)":"مانيكير، باديكير وتقشير +30 دقيقة تدليك (زيت/كريم)",
+    "Full Body Shave & 30 mints Massage (Oil/Cream)":"حلاقة كاملة للجسم و30 دقيقة تدليك (زيت/كريم)",
+    "Full Body Wax & 30 mints Massage (Oil/Cream)":"إزالة شعر الجسم بالكامل & تدليك لمدة 30 دقيقة (زيت/كريم)",
+    "Pedicure, Manicure & 30 mints Massage (Oil/Cream)":"باديكير، مانيكير & تدليك لمدة 30 دقيقة (زيت/كريم)",
+    "Pedicure, Manicure & Normal Moroccan Bath":"باديكير، مانيكير وحمام مغربي عادي",
+    "Pedicure, Manicure, 30 mints Masssage & Normal Moroccan Bath":"باديكير، مانيكير، مساج لمدة 30 دقيقة وحمام مغربي عادي",
+
+
+    "Thai Massage 30 mints":"مساج تايلندي 30 دقيقة",
+    "Thai Massage 60 mints":"مساج تايلندي 60 دقيقة",
+    "Relax Massage 30 mints":"استرخاء مساج 30 دقيقة",
+    "Relax Massage 60 mints":"استرخاء مساج 60 دقيقة",
+    "Sports Massage 30 mints":"تدليك رياضي 30 دقيقة",
+    "Sports Massage 60 mints":"تدليك رياضي 60 دقيقة",
+    "Therapeutic Massage 30 mints":"تدليك علاجي 30 دقيقة",
+    "Therapeutic Massage 60 mints":"تدليك علاجي 60 دقيقة",
+    "Hot Stone Massage 30 mints":"مساج الحجارة الساخنة 30 دقيقة",
+    "Hot Stone Massage 60 mints":"مساج الحجارة الساخنة 60 دقيقة",
+
+
+
+
+
     "Hair Washing & Styling": "غسل الشعر وتصفيفه",
     "Head Massage": "تدليك الرأس",
     "Hair Treatment": "علاج الشعر",
@@ -279,11 +315,11 @@ const translations = {
     "Full Day Beauty Package": "باكيج جمال ليوم كامل",
     "Hair & Nail Package": "باكيج شعر وأظافر",
     "Elevate Your Beauty Experience": "ارتقِ بتجربتك الجمالية",
-    At: "في",
+    "At": "في",
     "Stylice Salon": "صالون ستايلس",
     "we strive to provide you with an unforgettable experience.":
       "نسعى لتوفير تجربة لا تنسى لك.",
-    "Salon Services Menu": "قائمة خدمات الصالون",
+    "Services Menu": "قائمة خدمات الصالون",
     "we strive to provide you with an unforgettable experience.":
       "نسعى لتوفير تجربة لا تنسى لك.",
 
@@ -303,6 +339,8 @@ const translations = {
     yourEmail: "بريدك الإلكتروني",
     subscribe: "اشترك",
     rightsReserved: "جميع الحقوق محفوظة.",
+     "we strive to provide you with an unforgettable experience.":
+      "نسعى لتوفير تجربة لا تنسى لك.",
   },
 
   footer: {
