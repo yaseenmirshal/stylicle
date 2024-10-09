@@ -27,7 +27,7 @@ function About() {
             </p>
             <a
               href="#services"
-              className="inline-block mt-6 px-10 py-4 bg-yellow-500 text-white font-bold rounded-full shadow-lg hover:bg-yellow-600 transition duration-300"
+              className="inline-block mt-6 px-10 py-4 bg-yellow-500 text-slate-800 font-bold rounded-full shadow-lg hover:bg-yellow-600 transition duration-300"
               data-aos="fade-up"
             >
               {translate("about.exploreServices")}{" "}

@@ -36,6 +36,11 @@ export const translations = {
           image: './kidshair.jpg',
         },
         {
+          title: 'Kids Face Coloring',
+          description: 'Creative and playful face painting for kids with vibrant colors and fun designs.',
+          image: 'https://salon.prompttechdemohosting.com/wp-content/uploads/2023/03/childrens-makeup-face-paint-drawings-girls-face-painting-little-girl-having-face-painted-1-scaled.jpg',
+        },
+        {
           title: 'Brazilian Keratin',
           description: 'Achieve smooth and frizz-free hair with our keratin treatments.',
           image: 'https://www.nicholasmark.co.uk/mens-hair-straightening-newcastle-upon-tyne.jpg',
@@ -123,6 +128,12 @@ export const translations = {
           description: 'قصات شعر ممتعة وأنيقة لصغارك.',
           image: './kidshair.jpg',
         },
+        {
+          title: 'تلوين وجه الأطفال',
+          description: 'رسم وجه إبداعي ومرِح للأطفال بألوان زاهية وتصاميم ممتعة.',
+          image: 'https://salon.prompttechdemohosting.com/wp-content/uploads/2023/03/childrens-makeup-face-paint-drawings-girls-face-painting-little-girl-having-face-painted-1-scaled.jpg',
+        },
+
         {
           title: 'كيراتين برازيلية',
           description: 'حقق شعراً ناعماً وخالياً من التجاعيد مع علاجات الكيراتين لدينا.',

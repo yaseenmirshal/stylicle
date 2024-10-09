@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {
-  FaFacebook,
+  FaSnapchatGhost,
   FaInstagram,
   FaWhatsapp,
   FaPhone,
@@ -103,7 +103,7 @@ function Contact() {
               href="#"
               className="text-yellow-400 transition duration-300 hover:text-yellow-300"
             >
-              <FaFacebook size={30} />
+              <FaSnapchatGhost size={30} />
             </a>
             <a
               href="https://www.instagram.com/styliclesalon/"

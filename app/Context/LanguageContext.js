@@ -13,12 +13,12 @@ const translations = {
       contact: "Contact",
       services: "Services",
       gallery: "Gallery",
-      blog: "Blog",
+      blog: "Price List",
     },
     about: {
       title: "Discover the Art of Beauty",
       welcome:
-        "Welcome to Stylice Salon – where beauty knows no boundaries. Our mission is to bring out the best in you through personalized care, expert techniques, and luxurious experiences. Step into a world designed to inspire and empower you, with services tailored for every individual.",
+        "Welcome to Stylice Salon – where beauty knows no boundaries. Since 2021, our mission has been to bring out the best in you through personalized care, expert techniques, and luxurious experiences. Step into a world designed to inspire and empower you, with services tailored for every individual.",
       services:
         "From trendsetting haircuts to revitalizing spa treatments, each service at Stylice Salon is crafted with love and precision. We use only the finest products and cutting-edge techniques to deliver an experience that's truly transformative. Let our skilled team elevate your beauty routine to new heights.",
       exploreServices: "Explore Our Services",
@@ -162,7 +162,7 @@ const translations = {
     about: {
       title: "اكتشف فن الجمال", // "Discover the Art of Beauty"
       welcome:
-        "مرحباً بك في صالون ستايلس – حيث لا تعرف الجمال حدوداً. مهمتنا هي إبراز أفضل ما لديك من خلال الرعاية الشخصية، وتقنيات الخبراء، وتجارب الفخامة. ادخل إلى عالم مصمم لإلهامك وتمكينك، مع خدمات مصممة لكل فرد.",
+        "مرحبًا بكم في صالون ستايلس – حيث لا حدود للجمال. منذ عام 2021، كانت مهمتنا هي إبراز أفضل ما فيكِ من خلال العناية الشخصية، والتقنيات الاحترافية، والتجارب الفاخرة. ادخلي إلى عالم مصمم ليُلهمكِ ويُمكّنكِ، مع خدمات مخصصة لكل فرد.",
       services:
         "من قصات الشعر الرائجة إلى علاجات السبا المنعشة، كل خدمة في صالون ستايلس مُصممة بحب ودقة. نحن نستخدم فقط أفضل المنتجات والتقنيات الحديثة لتقديم تجربة تحوّلية حقًا. دع فريقنا الماهر يرفع روتين جمالك إلى آفاق جديدة.",
       exploreServices: "استكشف خدماتنا", // "Explore Our Services"
