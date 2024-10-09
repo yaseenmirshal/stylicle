@@ -16,6 +16,11 @@ export const translations = {
           image: './organicfacial.jpg',
         },
         {
+          title: 'Hydrolic Facial Treatment',
+          description: 'Non-invasive skin treatment that combines cleansing, exfoliation, extraction, hydration, and antioxidant protection in one procedure.',
+          image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
+        },
+        {
           title: 'Spa Manicure',
           description: 'Experience luxury with our spa manicure services.',
           image: './spamanicure.webp',
@@ -29,6 +34,11 @@ export const translations = {
           title: 'Kids Hair Cutting',
           description: 'Fun and stylish haircuts for your little ones.',
           image: './kidshair.jpg',
+        },
+        {
+          title: 'Kids Face Coloring',
+          description: 'Creative and playful face painting for kids with vibrant colors and fun designs.',
+          image: 'kidscolor.png',
         },
         {
           title: 'Brazilian Keratin',
@@ -60,11 +70,7 @@ export const translations = {
           description: 'Unwind with our therapeutic massage treatments.',
           image: 'https://img.freepik.com/premium-photo/handsome-man-spa-resort-receives-hot-stone-massage-hot-stone-massage-therapy_609048-3379.jpg',
         },
-        {
-          title: 'Hydrolic Facial Treatment',
-          description: 'Non-invasive skin treatment that combines cleansing, exfoliation, extraction, hydration, and antioxidant protection in one procedure.',
-          image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
-        },
+       
       ],
       navbar: {
         home: "HOME",
@@ -122,6 +128,12 @@ export const translations = {
           description: 'قصات شعر ممتعة وأنيقة لصغارك.',
           image: './kidshair.jpg',
         },
+        {
+          title: 'تلوين وجه الأطفال',
+          description: 'رسم وجه إبداعي ومرِح للأطفال بألوان زاهية وتصاميم ممتعة.',
+          image: './kidscolor.png',
+        },
+
         {
           title: 'كيراتين برازيلية',
           description: 'حقق شعراً ناعماً وخالياً من التجاعيد مع علاجات الكيراتين لدينا.',

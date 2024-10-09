@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {
-  FaFacebook,
+  FaSnapchatGhost,
   FaInstagram,
   FaWhatsapp,
   FaEnvelope,
@@ -12,7 +12,7 @@ function Footer() {
 
   const { translate } = useLanguage();
   return (
-    <footer className="bg-[#2E2E2E] text-white py-12 px-6 md:px-16">
+    <footer className="bg-black text-white py-12 px-6 md:px-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Contact Info */}
         <div className="space-y-4" data-aos="fade-up">
@@ -95,12 +95,12 @@ function Footer() {
       <div className="mt-12 border-t border-gray-500 pt-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
         {/* Social Media Links */}
         <div className="flex justify-center md:justify-start space-x-6 mb-4 md:mb-0">
-          <a
-            href="#"
-            className="text-[#FFD700] transition duration-300 hover:text-white"
-          >
-            <FaFacebook size={24} />
-          </a>
+        <a
+              href="#"
+              className="text-yellow-400 transition duration-300 hover:text-yellow-300"
+            >
+              <FaSnapchatGhost size={30} />
+            </a>
           <a
             href="https://www.instagram.com/styliclesalon/"
             className="text-[#FFD700] transition duration-300 hover:text-white"
