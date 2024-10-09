@@ -16,6 +16,11 @@ export const translations = {
           image: './organicfacial.jpg',
         },
         {
+          title: 'Hydrolic Facial Treatment',
+          description: 'Non-invasive skin treatment that combines cleansing, exfoliation, extraction, hydration, and antioxidant protection in one procedure.',
+          image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
+        },
+        {
           title: 'Spa Manicure',
           description: 'Experience luxury with our spa manicure services.',
           image: './spamanicure.webp',
@@ -60,11 +65,7 @@ export const translations = {
           description: 'Unwind with our therapeutic massage treatments.',
           image: 'https://img.freepik.com/premium-photo/handsome-man-spa-resort-receives-hot-stone-massage-hot-stone-massage-therapy_609048-3379.jpg',
         },
-        {
-          title: 'Hydrolic Facial Treatment',
-          description: 'Non-invasive skin treatment that combines cleansing, exfoliation, extraction, hydration, and antioxidant protection in one procedure.',
-          image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
-        },
+       
       ],
       navbar: {
         home: "HOME",
