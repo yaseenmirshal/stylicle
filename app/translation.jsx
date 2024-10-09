@@ -38,7 +38,7 @@ export const translations = {
         {
           title: 'Kids Face Coloring',
           description: 'Creative and playful face painting for kids with vibrant colors and fun designs.',
-          image: 'https://salon.prompttechdemohosting.com/wp-content/uploads/2023/03/childrens-makeup-face-paint-drawings-girls-face-painting-little-girl-having-face-painted-1-scaled.jpg',
+          image: 'kidscolor.png',
         },
         {
           title: 'Brazilian Keratin',

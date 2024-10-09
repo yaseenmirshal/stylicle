@@ -58,6 +58,39 @@ function Menu() {
       ],
     },
     {
+      title: translate("Hydrolic Facial Treatment"),
+      items: [
+        {
+          name: translate("Hydra Facial Normal"),
+          price: translate("150 AED"),
+        },
+        {
+          name: translate("Hydra Facial Moonster"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Hydra Facial Sea Soul"),
+          price: translate("500 AED"),
+        },
+        {
+          name: translate("Hydra Facial O3+"),
+          price: translate("600 AED"),
+        },
+        {
+          name: translate("Orange Galvanic"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Gold Galvanic"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Hydra Cleanup"),
+          price: translate("100 AED"),
+        },
+  
+      ],},
+    {
       title: translate("Kids"),
       items: [
         { name: translate("Boy Hair Cutting"), price: translate("40 AED") },
