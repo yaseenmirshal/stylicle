@@ -113,22 +113,7 @@ function Menu() {
         },
       ],
     },
-    {
-      title: translate("Massages"),
-      items: [
-        { name: translate("Thai Massage 30 mints"), price: translate("100 AED") },
-        { name: translate("Thai Massage 60 mints"), price: translate("150 AED") },
-        { name: translate("Relax Massage 30 mints"), price: translate("80 AED") },
-        { name: translate("Relax Massage 60 mints"), price: translate("150 AED") },
-        { name: translate("Sports Massage 30 mints"), price: translate("110 AED") },
-        { name: translate("Sports Massage 60 mints"), price: translate("200 AED") },
-        { name: translate("Therapeutic Massage 30 mints"), price: translate("110 AED") },
-        { name: translate("Therapeutic Massage 60 mints"), price: translate("200 AED") },
-        { name: translate("Hot Stone Massage 30 mints"), price: translate("110 AED") },
-        { name: translate("Hot Stone Massage 60 mints"), price: translate("200 AED") },
-        
-      ],
-    },
+    
     {
       title: translate("Waxing"),
       items: [
@@ -153,6 +138,39 @@ function Menu() {
         { name: translate("Full Body"), price: translate("200 AED") },
       ],
     },
+    {
+      title: translate("Hydrolic Facial Treatment"),
+      items: [
+        {
+          name: translate("Hydra Facial Normal"),
+          price: translate("150 AED"),
+        },
+        {
+          name: translate("Hydra Facial Moonster"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Hydra Facial Sea Soul"),
+          price: translate("500 AED"),
+        },
+        {
+          name: translate("Hydra Facial O3+"),
+          price: translate("600 AED"),
+        },
+        {
+          name: translate("Orange Galvanic"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Gold Galvanic"),
+          price: translate("200 AED"),
+        },
+        {
+          name: translate("Hydra Cleanup"),
+          price: translate("100 AED"),
+        },
+  
+      ],},
     {
       title: translate("Spa"),
       items: [
@@ -180,6 +198,22 @@ function Menu() {
           name: translate("Moroccan Bath with Massage"),
           price: translate("250 AED"),
         },
+      ],
+    },
+    {
+      title: translate("Massages"),
+      items: [
+        { name: translate("Thai Massage 30 mints"), price: translate("100 AED") },
+        { name: translate("Thai Massage 60 mints"), price: translate("150 AED") },
+        { name: translate("Relax Massage 30 mints"), price: translate("80 AED") },
+        { name: translate("Relax Massage 60 mints"), price: translate("150 AED") },
+        { name: translate("Sports Massage 30 mints"), price: translate("110 AED") },
+        { name: translate("Sports Massage 60 mints"), price: translate("200 AED") },
+        { name: translate("Therapeutic Massage 30 mints"), price: translate("110 AED") },
+        { name: translate("Therapeutic Massage 60 mints"), price: translate("200 AED") },
+        { name: translate("Hot Stone Massage 30 mints"), price: translate("110 AED") },
+        { name: translate("Hot Stone Massage 60 mints"), price: translate("200 AED") },
+        
       ],
     },
     {
@@ -228,7 +262,7 @@ function Menu() {
         
       ],
     },
-    
+   
   ];
 
   return (

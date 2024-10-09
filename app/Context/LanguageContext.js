@@ -228,8 +228,16 @@ const translations = {
     "Hot Stone Massage 60 mints":"مساج الحجارة الساخنة 60 دقيقة",
 
 
-
-
+    "Hydrolic Facial Treatment":"علاج الوجه الهيدروليكي",
+    "Hydra Facial Normal":"هيدرا فيشل عادي",
+    "Hydra Facial Moonster":"هيدرا فيشل مونستر",
+    "Hydra Facial Sea Soul":"هايدرا فيشل سي سول",
+    "Hydra Facial O3+":"هايدرا فيشل O3+",
+    "Orange Galvanic":"برتقالي جلفاني",
+    "Gold Galvanic":"ذهب جلفاني",
+    "Hydra Cleanup":"تنظيف هيدرا",
+    
+   
 
     "Hair Washing & Styling": "غسل الشعر وتصفيفه",
     "Head Massage": "تدليك الرأس",
@@ -317,11 +325,9 @@ const translations = {
     "Elevate Your Beauty Experience": "ارتقِ بتجربتك الجمالية",
     "At": "في",
     "Stylice Salon": "صالون ستايلس",
-    "we strive to provide you with an unforgettable experience.":
-      "نسعى لتوفير تجربة لا تنسى لك.",
+    "we strive to provide you with an unforgettable experience.": "نسعى لتوفير تجربة لا تنسى لك.",
     "Services Menu": "قائمة خدمات الصالون",
-    "we strive to provide you with an unforgettable experience.":
-      "نسعى لتوفير تجربة لا تنسى لك.",
+    "we strive to provide you with an unforgettable experience.":"نسعى لتوفير تجربة لا تنسى لك.",
 
     "Our Team": "فر يقنا",
     // Add other Arabic translations as needed
