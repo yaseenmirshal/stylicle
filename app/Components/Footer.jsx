@@ -22,7 +22,7 @@ function Footer() {
           </p>
           <div className="space-y-2">
             <p className="flex items-center">
-              <FaEnvelope className="mr-2" /> info@stylicle.com
+              <FaEnvelope className="mr-2" /> salonstylicle@gmail.com
             </p>
             <p className="flex items-center">
               <FaWhatsapp className="mr-2" /> +971 54 269 2267

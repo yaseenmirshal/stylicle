@@ -1,6 +1,6 @@
 export const translations = {
     en: {
-      mainHeading: "DISCOVER YOUR OWN STYLE AT STYLICLE",
+      mainHeading: "DISCOVER YOUR OWN STYLE AT STYLICLE MEN SALON & SPA",
       subHeading: "BECAUSE IT HAS TO BE PERFECT",
       exclusiveServices: "Our Services",
       services: [
@@ -99,7 +99,7 @@ export const translations = {
       
     },
     ar: {
-      mainHeading: "اكتشف أسلوبك الخاص في ستايلكل",
+      mainHeading: "اكتشف أسلوبك الخاص في صالون سبا ستايلك للرجال",
       subHeading: "لأنه يجب أن يكون مثالياً",
       exclusiveServices: "خدماتنا الحصرية",
       services: [
@@ -112,6 +112,11 @@ export const translations = {
           title: 'وجه عضوي',
           description: 'انتعش بشرتك مع المكونات الطبيعية والعضوية.',
           image: './organicfacial.jpg',
+        },
+        {
+          title: 'علاج الوجه الهيدروليكي',
+          description: 'لاج غير جراحي للبشرة يجمع بين التنظيف، التقشير، الاستخراج، الترطيب، والحماية من الأكسدة في إجراء واحد.',
+          image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
         },
         {
           title: 'مانيكير سبا',
@@ -165,11 +170,7 @@ export const translations = {
           description: 'استمتع بعلاجات المساج العلاجية لدينا.',
           image: 'https://img.freepik.com/premium-photo/handsome-man-spa-resort-receives-hot-stone-massage-hot-stone-massage-therapy_609048-3379.jpg',
         },
-        {
-          title: 'علاج الوجه الهيدروليكي',
-          description: 'لاج غير جراحي للبشرة يجمع بين التنظيف، التقشير، الاستخراج، الترطيب، والحماية من الأكسدة في إجراء واحد.',
-          image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
-        },
+      
       ],
       navbar: {
         home: "الرئيسية",

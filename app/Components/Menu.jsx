@@ -2,6 +2,7 @@ import React from "react";
 import { useLanguage } from "../Context/LanguageContext";
 
 function Menu() {
+  const isArabic = 'en' === 'ar';
   const { translate } = useLanguage(); // Get the translate function from context
 
   const services = [
@@ -193,39 +194,7 @@ function Menu() {
         { name: translate("Full Body"), price: translate("200 AED") },
       ],
     },
-    {
-      title: translate("Hydrolic Facial Treatment"),
-      items: [
-        {
-          name: translate("Hydra Facial Normal"),
-          price: translate("150 AED"),
-        },
-        {
-          name: translate("Hydra Facial Moonster"),
-          price: translate("200 AED"),
-        },
-        {
-          name: translate("Hydra Facial Sea Soul"),
-          price: translate("500 AED"),
-        },
-        {
-          name: translate("Hydra Facial O3+"),
-          price: translate("600 AED"),
-        },
-        {
-          name: translate("Orange Galvanic"),
-          price: translate("200 AED"),
-        },
-        {
-          name: translate("Gold Galvanic"),
-          price: translate("200 AED"),
-        },
-        {
-          name: translate("Hydra Cleanup"),
-          price: translate("100 AED"),
-        },
-  
-      ],},
+   
     {
       title: translate("Spa"),
       items: [
@@ -306,67 +275,70 @@ function Menu() {
 
   return (
     <div>
-      {/* Menu Section */}
-      <section
-        id="menu"
-        className="py-20 p-5 lg:p-0 bg-gray-900 relative overflow-hidden" // Dark background
+    {/* Menu Section */}
+    <section
+      id="menu"
+      className="py-20 p-5 lg:p-0 bg-gray-900 relative overflow-hidden" // Dark background
+      data-aos="fade-up"
+    >
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-yellow-400 mb-10">
+          {translate("Services Menu")}
+        </h2>{" "}
+        {/* Yellow text */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="p-6 rounded-lg shadow-lg bg-gray-800 transform hover:scale-105 transition duration-300 flex flex-col items-start" // Dark card background
+              data-aos="zoom-in"
+            >
+              <h3 className="text-3xl font-bold text-yellow-400 mb-4">
+                {service.title}
+              </h3>{" "}
+              {/* Yellow text */}
+              <ul className="text-left w-full">
+                {service.items.map((item, idx) => (
+                  <li
+                    key={idx}
+                    className={`flex justify-between w-full py-2 border-b border-transparent hover:border-yellow-500 transition duration-300 ${isArabic ? 'flex-row-reverse' : ''}`} // Adjust direction for Arabic
+                  >
+                    <span className={`text-lg ${isArabic ? 'text-right' : 'text-left'} text-gray-300`}>
+                      {item.name}
+                    </span>{" "}
+                    {/* Light gray text */}
+                    <span className={`text-lg font-semibold text-yellow-400 ${isArabic ? 'text-left' : 'text-right'}`}>
+                      {item.price}
+                    </span>{" "}
+                    {/* Yellow price */}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div
+        className="mt-16 bg-gray-800 text-white text-center py-10"
         data-aos="fade-up"
       >
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-yellow-400 mb-10">
-            {translate("Services Menu")}
-          </h2>{" "}
-          {/* Yellow text */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-lg shadow-lg bg-gray-800 transform hover:scale-105 transition duration-300 flex flex-col items-start" // Dark card background
-                data-aos="zoom-in"
-              >
-                <h3 className="text-3xl font-bold text-yellow-400 mb-4">
-                  {service.title}
-                </h3>{" "}
-                {/* Yellow text */}
-                <ul className="text-left w-full">
-                  {service.items.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="flex justify-between w-full py-2 border-b border-transparent hover:border-yellow-500 transition duration-300"
-                    >
-                      <span className="text-lg text-gray-300">{item.name}</span>{" "}
-                      {/* Light gray text */}
-                      <span className="text-lg font-semibold text-yellow-400">
-                        {item.price}
-                      </span>{" "}
-                      {/* Yellow price */}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div
-          className="mt-16 bg-gray-800 text-white text-center py-10"
-          data-aos="fade-up"
-        >
-          <h3 className="text-4xl font-bold mb-4">
-            {translate("Elevate Your Beauty Experience")}
-          </h3>
-          <p className="text-lg px-10">
-            {translate("At")}{" "}
-            <span className="font-semibold text-yellow-400">
-              {translate("Stylice Salon")}
-            </span>
-            ,{" "}
-            {translate(
-              "we strive to provide you with an unforgettable experience."
-            )}
-          </p>
-        </div>
-      </section>
-    </div>
+        <h3 className="text-4xl font-bold mb-4">
+          {translate("Elevate Your Beauty Experience")}
+        </h3>
+        <p className="text-lg px-10">
+          {translate("At")}{" "}
+          <span className="font-semibold text-yellow-400">
+            {translate("Stylice Salon")}
+          </span>
+          ,{" "}
+          {translate(
+            "we strive to provide you with an unforgettable experience."
+          )}
+        </p>
+      </div>
+    </section>
+  </div>
+  
   );
 }
 
