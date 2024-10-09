@@ -131,7 +131,11 @@ export const translations = {
         {
           title: 'تلوين وجه الأطفال',
           description: 'رسم وجه إبداعي ومرِح للأطفال بألوان زاهية وتصاميم ممتعة.',
+<<<<<<< HEAD
           image: './kidscolor.png',
+=======
+          image: 'https://salon.prompttechdemohosting.com/wp-content/uploads/2023/03/childrens-makeup-face-paint-drawings-girls-face-painting-little-girl-having-face-painted-1-scaled.jpg',
+>>>>>>> 2b916d4fba8725f8a9e40811afce84bca445b1c3
         },
 
         {
