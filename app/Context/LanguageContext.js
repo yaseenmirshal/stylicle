@@ -129,8 +129,7 @@ const translations = {
       "we strive to provide you with an unforgettable experience.":
         "we strive to provide you with an unforgettable experience.",
       "Salon Services Menu": "Salon Services Menu",
-      "we strive to provide you with an unforgettable experience.":
-        "we strive to provide you with an unforgettable experience.",
+     
     },
     footer: {
       stylicleSalon: "Stylicle Salon",
@@ -352,9 +351,10 @@ const translations = {
     "Elevate Your Beauty Experience": "ارتقِ بتجربتك الجمالية",
     "At": "في",
     "Stylice Salon": "صالون ستايلس",
-
-    "we strive to provide you with an unforgettable experience.": "نسعى لتوفير تجربة لا تنسى لك.",
+   
     "Services Menu": "قائمة خدمات الصالون",
+    "we strive to provide you with an unforgettable experience.":
+    "نسعى لتوفير تجربة لا تنسى لك.",
 
     "Our Team": "فر يقنا",
     // Add other Arabic translations as needed
@@ -372,24 +372,10 @@ const translations = {
     yourEmail: "بريدك الإلكتروني",
     subscribe: "اشترك",
     rightsReserved: "جميع الحقوق محفوظة.",
-     "we strive to provide you with an unforgettable experience.":
-      "نسعى لتوفير تجربة لا تنسى لك.",
+   
   },
 
-  footer: {
-    stylicleSalon: "صالون ستايليكل",
-    experienceLuxury: "استمتع بخدمات صالون فاخرة تعزز جمالك الطبيعي.",
-    ourServices: "خدماتنا",
-    hairStyling: "تصفيف الشعر",
-    makeup: "المكياج",
-    facials: "العناية بالبشرة والوجه",
-    manicure: "العناية بالأظافر",
-    stayUpdated: "ابق على اطلاع",
-    subscribeToReceive: "اشترك لتلقي عروض حصرية ونصائح من صالون ستايليكل.",
-    yourEmail: "بريدك الإلكتروني",
-    subscribe: "اشترك",
-    rightsReserved: "جميع الحقوق محفوظة.",
-  },
+ 
   // Add more languages as needed
 };
 

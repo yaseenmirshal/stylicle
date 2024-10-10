@@ -329,7 +329,7 @@ function Menu() {
         <h3 className="text-4xl font-bold mb-4">
           {translate("Elevate Your Beauty Experience")}
         </h3>
-        <p className="text-lg px-10">
+        {/* <p className="text-lg px-10">
           {translate("At")}{" "}
           <span className="font-semibold text-yellow-400">
             {translate("Stylice Salon")}
@@ -338,7 +338,7 @@ function Menu() {
           {translate(
             "we strive to provide you with an unforgettable experience."
           )}
-        </p>
+        </p> */}
       </div>
     </section>
   </div>
