@@ -42,9 +42,7 @@ function Navbar() {
 
   return (
     <div
-    className={`fixed top-0 w-full z-50 transition-transform duration-500 ${
-      showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
-    }`}
+    className={"fixed top-0 w-full z-50 transition-transform duration-500"}
   >
     {/* Navbar Section */}
     <div className="w-full h-20 md:h-36 bg-[#2E2E2E]/40 backdrop-blur-md border border-gray-600/50 shadow-md flex items-center justify-between px-5 md:px-16 relative">

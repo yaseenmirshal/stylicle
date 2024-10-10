@@ -284,7 +284,7 @@ function Menu() {
       <div className="container mx-auto text-center">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-yellow-400 mb-10">
           {translate("Services Menu")}
-        </h2>{" "}
+        </h2>
         {/* Yellow text */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
@@ -295,7 +295,7 @@ function Menu() {
             >
               <h3 className="text-3xl font-bold text-yellow-400 mb-4">
                 {service.title}
-              </h3>{" "}
+              </h3>
               {/* Yellow text */}
               <ul className="text-left w-full">
                 {service.items.map((item, idx) => (
@@ -303,13 +303,17 @@ function Menu() {
                     key={idx}
                     className={`flex justify-between w-full py-2 border-b border-transparent hover:border-yellow-500 transition duration-300 ${isArabic ? 'flex-row-reverse' : ''}`} // Adjust direction for Arabic
                   >
-                    <span className={`text-lg ${isArabic ? 'text-right' : 'text-left'} text-gray-300`}>
+                    <span
+                      className={`text-lg ${isArabic ? 'text-right' : 'text-left'} text-gray-300 flex-grow`}
+                    >
                       {item.name}
-                    </span>{" "}
+                    </span>
                     {/* Light gray text */}
-                    <span className={`text-lg font-semibold text-yellow-400 ${isArabic ? 'text-left' : 'text-right'}`}>
+                    <span
+                      className={`text-lg font-semibold text-yellow-400 ${isArabic ? 'text-left' : 'text-right'} whitespace-nowrap`}
+                    >
                       {item.price}
-                    </span>{" "}
+                    </span>
                     {/* Yellow price */}
                   </li>
                 ))}
@@ -338,6 +342,7 @@ function Menu() {
       </div>
     </section>
   </div>
+  
   
   );
 }
