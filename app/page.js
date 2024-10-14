@@ -77,7 +77,7 @@ export default function Home() {
           <div className="mt-10 md:mt-36">
             {/* Main Heading */}
             <h1
-              className="text-white text-4xl md:text-5xl font-bold mb-4"
+              className="text-white text-4xl md:text-4xl font-bold mb-4"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
