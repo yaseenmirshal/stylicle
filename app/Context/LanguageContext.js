@@ -15,6 +15,7 @@ const translations = {
       gallery: "Gallery",
       blog: "Price List",
     },
+   
     about: {
       title: "Discover the Art of Beauty",
       welcome:
@@ -30,8 +31,9 @@ const translations = {
       title: "Get in Touch", // Translate title
       description:
         "We'd love to hear from you! Whether you have a question about our products, pricing, or anything else, our team is here to help.", // Translate description
-      visitUs: "Visit Us", // Translate "Visit Us"
+      visitUs: "Our Locations", // Translate "Visit Us"
       location: "Shakhbout City - MFW-8 - Abu Dhabi", // Translate location
+      location2: "Naseem Al Barr St - Shakhbout City - MFW-10 - Abu Dhabi",
       callUs: "Call Us", // Translate "Call Us"
       phoneNumber: "+971 54 269 2267", // Translate phone number
       whatsapp: "WhatsApp", // Translate "WhatsApp"
@@ -175,6 +177,7 @@ const translations = {
         "يسعدنا سماع آرائكم! سواء كانت لديك أسئلة حول منتجاتنا، أو الأسعار، أو أي شيء آخر، فإن فريقنا هنا لمساعدتك.", // "We'd love to hear from you! Whether you have a question about our products, pricing, or anything else, our team is here to help."
       visitUs: "قم بزيارتنا", // "Visit Us"
       location: "مدينة شخبوط - MFW-8 - أبوظبي", // "Shakhbout City - MFW-8 - Abu Dhabi"
+      location2: "نسيم البر - مدينة شخبوط - MFW-10 - أبوظبي",
       callUs: "اتصل بنا", // "Call Us"
       phoneNumber: "+971 54 269 2267", // "+971 54 269 2267"
       whatsapp: "واتساب", // "WhatsApp"
@@ -352,7 +355,7 @@ const translations = {
     "At": "في",
     "Stylice Salon": "صالون ستايلس",
    
-    "Services Menu": "قائمة خدمات الصالون",
+    "Services Menu": "منو",
     "we strive to provide you with an unforgettable experience.":
     "نسعى لتوفير تجربة لا تنسى لك.",
 

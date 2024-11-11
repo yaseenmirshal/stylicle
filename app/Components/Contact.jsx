@@ -14,7 +14,7 @@ function Contact() {
 
   return (
     <div id="contact">
-      <div className="bg-gray-900 py-16 px-6 md:px-16">
+      <div className="bg-gray-900 py-16 px-7 md:px-16">
         <div className="max-w-6xl mx-auto text-center">
           {/* Title and Description */}
           <h2
@@ -32,66 +32,82 @@ function Contact() {
           </p>
 
           {/* Contact Details */}
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            {/* Location Box */}
-            <div
-              className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
-              onClick={() =>
-                window.open(
-                  "https://www.google.com/maps?q=Stylicle+salon+spa+-+0+-+Abu+Dhabi&ftid=0x3e5e377b71c8e37b:0x9266e43e1da6e6e2&hl=en-AE&gl=ae&entry=gps&lucs=47062720&g_ep=CAISBjYuNTYuMhgAINeCAyoINDcwNjI3MjBCAkFF&g_st=iw",
-                  "_blank"
-                )
-              }
-            >
-              <FaMapMarkerAlt className="text-yellow-400 text-4xl mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-yellow-400">
-                {translate("contact.visitUs")}
-              </h3>{" "}
-              {/* Translate "Visit Us" */}
-              <p className="text-gray-300 mt-2">
-                {translate("contact.location")}
-              </p>{" "}
-              {/* Translate the location */}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+  {/* Location Box with Two Locations in a Column */}
+  <div className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg">
+    <FaMapMarkerAlt className="text-yellow-400 text-4xl mx-auto mb-4" />
+    <h3 className="text-xl font-semibold text-yellow-400 text-center mb-4">
+      {translate("contact.visitUs")}
+    </h3>
 
-            {/* Call Us Box */}
-            <div
-              className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
-              onClick={() => window.open("tel:+1234567890")}
-            >
-              <FaPhone className="text-yellow-400 text-4xl mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-yellow-400">
-                {translate("contact.callUs")}
-              </h3>{" "}
-              {/* Translate "Call Us" */}
-              <p className="text-gray-300 mt-2">
-                {translate("contact.phoneNumber")}
-              </p>{" "}
-              {/* Translate the phone number */}
-            </div>
+    {/* Two Locations Stacked Vertically */}
+    <div className="space-y-4">
+      {/* Location 1 */}
+      <div
+        className="p-6 border-b border-gray-600 cursor-pointer transition hover:bg-gray-700 rounded-t-lg text-center"
+        onClick={() =>
+          window.open(
+            "https://maps.app.goo.gl/zV2KULHhL5tHzntH7",
+            "_blank"
+          )
+        }
+      >
+        <h4 className="text-lg font-semibold text-gray-300">
+          {translate("contact.location")}
+        </h4>
+      </div>
 
-            {/* WhatsApp Box */}
-            <div
-              className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
-              onClick={() =>
-                window.open("https://wa.me/971542692267", "_blank")
-              }
-            >
-              <FaWhatsapp className="text-yellow-400 text-4xl mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-yellow-400">
-                {translate("contact.whatsapp")}
-              </h3>{" "}
-              {/* Translate "WhatsApp" */}
-              <p className="text-gray-300 mt-2">
-                {translate("contact.whatsappNumber")}
-              </p>{" "}
-              {/* Translate the WhatsApp number */}
-            </div>
-          </div>
+      {/* Location 2 */}
+      <div
+        className="p-6 cursor-pointer transition hover:bg-gray-700 rounded-b-lg text-center"
+        onClick={() =>
+          window.open(
+            "https://maps.app.goo.gl/cLo74Ha2KFGCBgz96?g_st=iw",
+            "_blank"
+          )
+        }
+      >
+        <h4 className="text-lg font-semibold text-gray-300">
+          {translate("contact.location2")}
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  {/* Call Us Box */}
+  <div
+    className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer flex flex-col items-center"
+    onClick={() => window.open("tel:+1234567890")}
+  >
+    <FaPhone className="text-yellow-400 text-4xl mb-4" />
+    <h3 className="text-xl font-semibold text-yellow-400 text-center">
+      {translate("contact.callUs")}
+    </h3>
+    <p className="text-gray-300 mt-2 text-center">
+      {translate("contact.phoneNumber")}
+    </p>
+  </div>
+
+  {/* WhatsApp Box */}
+  <div
+    className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer flex flex-col items-center"
+    onClick={() =>
+      window.open("https://wa.me/971542692267", "_blank")
+    }
+  >
+    <FaWhatsapp className="text-yellow-400 text-4xl mb-4" />
+    <h3 className="text-xl font-semibold text-yellow-400 text-center">
+      {translate("contact.whatsapp")}
+    </h3>
+    <p className="text-gray-300 mt-2 text-center">
+      {translate("contact.whatsappNumber")}
+    </p>
+  </div>
+</div>
+
+
+
+
 
           {/* Social Media Links */}
           <div

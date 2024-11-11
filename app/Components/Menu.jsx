@@ -278,7 +278,7 @@ function Menu() {
     {/* Menu Section */}
     <section
       id="menu"
-      className="py-20 p-5 lg:p-0 bg-gray-900 relative overflow-hidden" // Dark background
+      className="py-20 px-5 lg:p-0 bg-gray-900 relative overflow-hidden" // Dark background
       data-aos="fade-up"
     >
       <div className="container mx-auto text-center">
