@@ -16,7 +16,7 @@ export const translations = {
           image: './organicfacial.jpg',
         },
         {
-          title: 'Hydrolic Facial Treatment',
+          title: 'Hydra Facial Treatment',
           description: 'Non-invasive skin treatment that combines cleansing, exfoliation, extraction, hydration, and antioxidant protection in one procedure.',
           image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
         },
@@ -114,7 +114,7 @@ export const translations = {
           image: './organicfacial.jpg',
         },
         {
-          title: 'علاج الوجه الهيدروليكي',
+          title: 'علاج الوجه الهيدر',
           description: 'لاج غير جراحي للبشرة يجمع بين التنظيف، التقشير، الاستخراج، الترطيب، والحماية من الأكسدة في إجراء واحد.',
           image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
         },

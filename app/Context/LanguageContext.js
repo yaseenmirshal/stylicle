@@ -158,7 +158,7 @@ const translations = {
       contact: "اتصل بنا", // "Contact"
       services: "الخدمات", // "Services"
       gallery: "معرض", // "Gallery"
-      blog: "مدونة", // "Blog"
+      blog: "منو", // "Blog"
     },
     about: {
       title: "اكتشف فن الجمال", // "Discover the Art of Beauty"
