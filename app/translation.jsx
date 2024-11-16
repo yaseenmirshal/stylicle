@@ -114,7 +114,7 @@ export const translations = {
           image: './organicfacial.jpg',
         },
         {
-          title: 'علاج الوجه الهيدر',
+          title: 'هيدرا فيشل تريتمينت',
           description: 'لاج غير جراحي للبشرة يجمع بين التنظيف، التقشير، الاستخراج، الترطيب، والحماية من الأكسدة في إجراء واحد.',
           image: 'https://www.albiraaclinic.com/wp-content/uploads/2024/06/HydraFacial-for-Men-in-Dubai.jpg',
         },

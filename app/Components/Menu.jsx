@@ -59,7 +59,7 @@ function Menu() {
       ],
     },
     {
-      title: translate("Hydrolic Facial Treatment"),
+      title: translate("Hydra Facial Treatment"),
       items: [
         {
           name: translate("Hydra Facial Normal"),

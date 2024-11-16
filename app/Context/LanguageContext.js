@@ -15,6 +15,8 @@ const translations = {
       gallery: "Gallery",
       blog: "Price List",
     },
+
+    
    
     about: {
       title: "Discover the Art of Beauty",
@@ -41,6 +43,8 @@ const translations = {
     },
 
     en: {
+
+      "Hydra Facial Treatment":"Hydra Facial Treatment",
       "Hair & Beard": "Hair & Beard",
       "Hair Cutting": "Hair Cutting",
       "30 AED": "30 AED",
@@ -183,6 +187,7 @@ const translations = {
       whatsapp: "واتساب", // "WhatsApp"
       whatsappNumber: "+971 54 269 2267", // "+971 54 269 2267"
     },
+    
     "Hair & Beard": "شعر ولحية",
     "Hair Cutting": "قص الشعر",
     
@@ -200,10 +205,7 @@ const translations = {
     "Face Threading": "خيط الوجه",
     
     "Hair Washing": "غسل الشعر",
-
-    
-    
-
+   
     "Arm & Bikini Shave":"حلاقة الذراعين والبيكيني",
     "Arm & Bikini Wax":"شمع الأذرع والبكيني",
     "Manicure, Pedicure & Scrub":"مانيكير، باديكير وتقشير",
@@ -238,7 +240,7 @@ const translations = {
     "Wood Massage 60 mints":"مساج الخشب 60 دقيقة",
 
 
-    "Hydrolic Facial Treatment":"علاج الوجه الهيدروليكي",
+    "Hydra Facial Treatment":"هيدرا فيشل تريتمينت",
     "Hydra Facial Normal":"هيدرا فيشل عادي",
     "Hydra Facial Moonster":"هيدرا فيشل مونستر",
     "Hydra Facial Sea Soul":"هايدرا فيشل سي سول",
