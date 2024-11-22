@@ -6,8 +6,10 @@ import {
   FaWhatsapp,
   FaPhone,
   FaMapMarkerAlt,
+   FaArrowRight
 } from "react-icons/fa";
 import { useLanguage } from "../Context/LanguageContext"; // Import the useLanguage hook
+import Link from "next/link";
 
 function Contact() {
   const { translate } = useLanguage(); // Get the translate function from context
@@ -33,18 +35,20 @@ function Contact() {
 
           {/* Contact Details */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
-  {/* Location Box with Two Locations in a Column */}
-  <div className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg">
-    <FaMapMarkerAlt className="text-yellow-400 text-4xl mx-auto mb-4" />
-    <h3 className="text-xl font-semibold text-yellow-400 text-center mb-4">
-      {translate("contact.visitUs")}
-    </h3>
 
-    {/* Two Locations Stacked Vertically */}
-    <div className="space-y-4">
-      {/* Location 1 */}
-      <div
-        className="p-6 border-b border-gray-600 cursor-pointer transition hover:bg-gray-700 rounded-t-lg text-center"
+{/* Location Box with Two Locations in a Column */}
+<div className="bg-gray-800 shadow-md p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-lg">
+  <FaMapMarkerAlt className="text-yellow-400 text-4xl mx-auto mb-4" />
+  <h3 className="text-xl font-semibold text-yellow-400 text-center mb-4">
+    {translate("contact.visitUs")}
+  </h3>
+
+  {/* Two Locations Stacked Vertically */}
+  <div className="space-y-4">
+    {/* Location 1 */}
+    <div className="p-6 border-b border-gray-600 cursor-pointer transition hover:bg-gray-700 rounded-t-lg text-center">
+      <h4
+        className="text-lg font-semibold text-gray-300 mb-4"
         onClick={() =>
           window.open(
             "https://maps.app.goo.gl/zV2KULHhL5tHzntH7",
@@ -52,14 +56,24 @@ function Contact() {
           )
         }
       >
-        <h4 className="text-lg font-semibold text-gray-300">
-          {translate("contact.location")}
-        </h4>
+        {translate("contact.location")}
+      </h4>
+      {/* See More Button */}
+      <div className="flex justify-center">
+        
+      <Link href="/Branch" legacyBehavior>
+      <button className="flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-800 bg-yellow-400 rounded hover:bg-yellow-500">
+        {translate("contact.seemore")}
+      <FaArrowRight className="ml-2" />
+      </button>
+      </Link>
       </div>
+    </div>
 
-      {/* Location 2 */}
-      <div
-        className="p-6 cursor-pointer transition hover:bg-gray-700 rounded-b-lg text-center"
+    {/* Location 2 */}
+    <div className="p-6 cursor-pointer transition hover:bg-gray-700 rounded-b-lg text-center">
+      <h4
+        className="text-lg font-semibold text-gray-300 mb-4"
         onClick={() =>
           window.open(
             "https://maps.app.goo.gl/cLo74Ha2KFGCBgz96?g_st=iw",
@@ -67,12 +81,23 @@ function Contact() {
           )
         }
       >
-        <h4 className="text-lg font-semibold text-gray-300">
-          {translate("contact.location2")}
-        </h4>
+        {translate("contact.location2")}
+      </h4>
+      {/* See More Button */}
+      <div className="flex justify-center">
+      <Link href="/Branch" legacyBehavior>
+       <a className="flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-800 bg-yellow-400 rounded hover:bg-yellow-500">
+       {translate("contact.seemore")}
+       <FaArrowRight className="ml-2" />
+      </a>
+      </Link>
+
       </div>
     </div>
   </div>
+</div>
+
+
 
   {/* Call Us Box */}
   <div

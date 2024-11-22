@@ -40,6 +40,7 @@ const translations = {
       phoneNumber: "+971 54 269 2267", // Translate phone number
       whatsapp: "WhatsApp", // Translate "WhatsApp"
       whatsappNumber: "+971 54 269 2267", // Translate WhatsApp number
+      seemore:"See More"
     },
 
     en: {

@@ -59,7 +59,7 @@ function Navbar() {
       {/* Left Side Navigation Links */}
       <div className="hidden font-bold md:flex space-x-8 lg:space-x-16 absolute left-5 md:left-16">
         {[
-          { label: translate("navbar.home"), link: "#home" },
+          { label: translate("navbar.home"), link: "/" },
           { label: translate("navbar.about"), link: "#about" },
           { label: translate("navbar.contact"), link: "#contact" },
         ].map((item, index) => (
