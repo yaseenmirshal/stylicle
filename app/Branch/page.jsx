@@ -1,18 +1,25 @@
+
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
 const Branches = () => {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
+    setIsClient(true);
     AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Animation happens only once
+      duration: 1000,
+      once: true,
     });
   }, []);
 
+  if (!isClient) {
+    return null;
+  }
   return (
     <>
       <Navbar />
@@ -20,15 +27,9 @@ const Branches = () => {
         <div className="container mx-auto p-6 space-y-16 pt-36 md:pt-52">
           {/* Branch 1 Section */}
           <div className="space-y-8" data-aos="fade-up">
-            {/* Location Name */}
-            <h2
-              className="text-3xl font-bold text-yellow-400 text-center"
-              data-aos="fade-down"
-            >
+            <h2 className="text-3xl font-bold text-yellow-400 text-center" data-aos="fade-down">
               Branch 1 (Shakhbout City - MFW-8 - Abu Dhabi)
             </h2>
-
-            {/* Content Section */}
             <div className="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
               {/* Video */}
               <div className="lg:w-1/2 relative" data-aos="fade-right">
@@ -42,7 +43,6 @@ const Branches = () => {
                   Your browser does not support the video tag.
                 </video>
               </div>
-
               {/* Images */}
               <div className="lg:w-1/2 grid gap-6" data-aos="fade-right">
                 <img
@@ -61,15 +61,9 @@ const Branches = () => {
 
           {/* Branch 2 Section */}
           <div className="space-y-8" data-aos="fade-up">
-            {/* Location Name */}
-            <h2
-              className="text-3xl font-bold text-yellow-400 text-center"
-              data-aos="fade-down"
-            >
+            <h2 className="text-3xl font-bold text-yellow-400 text-center" data-aos="fade-down">
               Branch 2 (Naseem Al Barr St - Shakhbout City - MFW-10 - Abu Dhabi)
             </h2>
-
-            {/* Content Section */}
             <div className="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
               {/* Video */}
               <div className="lg:w-1/2 relative" data-aos="fade-right">
@@ -83,7 +77,6 @@ const Branches = () => {
                   Your browser does not support the video tag.
                 </video>
               </div>
-
               {/* Images */}
               <div className="lg:w-1/2 grid gap-6" data-aos="fade-down">
                 <img
