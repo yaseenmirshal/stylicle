@@ -35,7 +35,7 @@ const Branches = () => {
                 <video
                   autoPlay
                   loop
-                  // muted
+                  muted
                   className="w-full rounded-lg shadow-lg object-cover"
                 >
                   <source src="/branch1.mp4" type="video/mp4" />
@@ -44,17 +44,14 @@ const Branches = () => {
               </div>
 
               {/* Images */}
-              <div
-                className="lg:w-1/2 grid  gap-6"
-                data-aos="fade-right"
-              >
+              <div className="lg:w-1/2 grid gap-6" data-aos="fade-right">
                 <img
-                  src="/branch1.jpeg"
+                  src="/gallery/image6.jpg"
                   alt="Branch 1 Image 1"
                   className="w-full h-48 md:h-[520px] object-cover rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
                 />
                 <img
-                  src="/3 team1.jpeg"
+                  src="/gallery/image1.jpg"
                   alt="Branch 1 Image 2"
                   className="w-full h-48 md:h-[520px] object-cover rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
                 />
@@ -88,17 +85,14 @@ const Branches = () => {
               </div>
 
               {/* Images */}
-              <div
-                className="lg:w-1/2 grid  gap-6"
-                data-aos="fade-down"
-              >
+              <div className="lg:w-1/2 grid gap-6" data-aos="fade-down">
                 <img
-                  src="/branch2.jpeg"
+                  src="/gallery/image7.jpg"
                   alt="Branch 2 Image 1"
                   className="w-full h-48 md:h-[520px] object-cover rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
                 />
                 <img
-                  src="/3team.jpeg"
+                  src="/gallery/image9.jpg"
                   alt="Branch 2 Image 2"
                   className="w-full h-48 md:h-[520px] object-cover rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
                 />
@@ -107,7 +101,7 @@ const Branches = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

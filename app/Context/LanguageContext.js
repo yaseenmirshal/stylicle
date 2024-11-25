@@ -39,8 +39,13 @@ const translations = {
       callUs: "Call Us", // Translate "Call Us"
       phoneNumber: "+971 54 269 2267", // Translate phone number
       whatsapp: "WhatsApp", // Translate "WhatsApp"
-      whatsappNumber: "+971 54 269 2267", // Translate WhatsApp number
-      seemore:"See More"
+      whatsappNumber: "+971 54 269 2267", // Translate WhatsApp numbe
+      seemore:"See More",
+      getDirections:"Get Direction",
+      call:"call",
+      branch1Address:"Branch 1",
+      branch2Address:"Branch 2",
+
     },
 
     en: {
@@ -187,6 +192,12 @@ const translations = {
       phoneNumber: "+971 54 269 2267", // "+971 54 269 2267"
       whatsapp: "واتساب", // "WhatsApp"
       whatsappNumber: "+971 54 269 2267", // "+971 54 269 2267"
+
+      whatsappNumber: "+971 54 269 2267",
+      getDirections:"احصل على الاتجاهات",
+      call:"اتصل",
+      seemore:"عرض المزيد",
+
     },
     
     "Hair & Beard": "شعر ولحية",
@@ -363,6 +374,8 @@ const translations = {
     "نسعى لتوفير تجربة لا تنسى لك.",
 
     "Our Team": "فر يقنا",
+    "Gallery": "معرض الصور",
+
     // Add other Arabic translations as needed
   },
   footer: {

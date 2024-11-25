@@ -121,6 +121,9 @@ function Navbar() {
       <div className="bg-slate-800 text-white p-5 md:hidden flex flex-col space-y-4 text-center transition-transform duration-500 ease-in-out">
         {[
           { label: translate("navbar.home"), link: "#home" },
+
+          { label: translate("navbar.home"), link: "/" },
+
           { label: translate("navbar.about"), link: "#about" },
           { label: translate("navbar.contact"), link: "#contact" },
           { label: translate("navbar.services"), link: "#services" },
