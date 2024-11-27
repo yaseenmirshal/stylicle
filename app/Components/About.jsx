@@ -13,7 +13,7 @@ function About() {
         className="py-20 bg-gray-900 relative overflow-hidden"
         data-aos="fade-up"
       >
-        <div  className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-5">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 px-5">
           <div className="lg:w-1/2 text-left" data-aos="fade-right">
             <h2 className="text-6xl font-extrabold text-yellow-400 mb-6">
               {translate("about.title")} {/* Translate the title */}
