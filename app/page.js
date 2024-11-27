@@ -144,7 +144,7 @@ export default function Home() {
             {translate("Gallery")}
           </h2>
           <div className="grid grid-cols-1 p-5 lg:p-0 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {Array(8)
+            {Array(13)
               .fill(0)
               .map((_, index) => (
                 <div
