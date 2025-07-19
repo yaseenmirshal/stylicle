@@ -29,13 +29,9 @@ export default function RootLayout({ children, pageProps }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-<<<<<<< HEAD
-=======
+
         <GoogleAnalytics gaId="G-F8XJRL7KXF" />
 
-
->>>>>>> 0df47b6 (Added Google Analytics tracking code)
-        {/* Wrap children with LanguageProvider */}
         <LanguageProvider>
           {children} 
         </LanguageProvider>
