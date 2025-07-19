@@ -2,10 +2,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { LanguageProvider } from "./Context/LanguageContext";// Corrected the path to LanguageContext
-<<<<<<< HEAD
-=======
+
 import { GoogleAnalytics } from "@next/third-parties/google";
->>>>>>> 0df47b6 (Added Google Analytics tracking code)
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff", // Adjust the path as per your project structure
